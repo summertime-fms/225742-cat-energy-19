@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Миша Данюшин](https://up.htmlacademy.ru/adaptive/19/user/225742).
-* Наставник: "Анастасия Рябчикова"
+* Наставник: [Анастасия Рябчикова] (https://htmlacademy.ru/profile/id521463)
 
 ---
 
