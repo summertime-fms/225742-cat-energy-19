@@ -31,8 +31,14 @@ font-weight: 500;
 border-top: 1px solid #f2f2f2;
 cursor: auto;
     &:last-of-type {
-        border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
 }
+    &:hover a {
+    color: rgba(17, 17, 17, 0.6);
+    }
+    &:active a {
+    color: rgba(17, 17, 17, 0.3);
+    }
 }
 
 .main-nav__item a {
@@ -42,6 +48,9 @@ padding-bottom: 24px;
 height: 17px;
 }
 
+.main-nav__link--active {
+border-bottom: 2px solid @leaf;
+}
 
 
 
