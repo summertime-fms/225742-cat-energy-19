@@ -1,0 +1,51 @@
+.features {
+.centr;
+margin-bottom: 47px;
+}
+
+.features__list {
+display: flex;
+flex-direction: column;
+margin: 0;
+padding: 0;
+
+list-style: none;
+}
+
+.features__item {
+    margin-bottom: 20px;
+    min-height: 60px;
+    
+    font-family: @arial;
+    line-height: 18px;
+    text-align: left;
+
+    &::before {
+    content: "";
+
+    float: left;
+
+    display: block;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+
+    background-color: @leaf;
+    }
+    &--natural::before {
+    background-image: url(/img/advantage-leaf@1x.png);
+    background-position: 50% 50%;
+    }
+    &--easy::before {
+    background-image: url(/img/advantage-powder@1x.png);
+    background-position: 50% 50%;
+    }
+    &--comfort::before {
+    background-image: url(/img/advantage-dining@1x.png);
+    background-position: 50% 50%;
+    }
+    &--fast::before {
+    background-image: url(/img/advantage-clock@1x.png);
+    background-position: 50% 50%;
+    }
+}
