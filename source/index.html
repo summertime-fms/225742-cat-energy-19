@@ -2,15 +2,17 @@
 <html lang="ru">
     <head>
       <meta charset="utf-8">
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
       <title>HTML Academy. Проект Cat Energy</title>
     </head>
     <body>
         <header class="page-header">
             <a class="page-header__logo" title="Cat energy">
-                <img class="page-header__logo-image" src="img/logo-mobile-header.svg" alt="Cat energy. Функциональное питание для котов" width="191" height="39">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat energy. Функциональное питание для котов" width="191" height="39">
             </a>
             <nav class="main-nav">
-                <button class="main-nav__toggle" type="button">Открыть меню</button>
+                <button class="main-nav__toggle" type="button"></button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
@@ -19,7 +21,7 @@
                         <li class="main-nav__item">
                             <a href="catalog.html">Каталог продукции</a>
                         </li>
-                         <li class="main-nav__item">
+                        <li class="main-nav__item">
                             <a href="form.html">Подбор программы</a>
                         </li>
                     </ul>
@@ -28,9 +30,11 @@
         </header>
         <main class="main-page">
             <section class="short-description">
-                <h1 class="short-description__title title">Функциональное питание для котов</h1>
-                <span class="short-description__title-add">Занялся собой? Займись котом!</span>
-                <img class="main-page__photo" src="https://via.placeholder.com/150x150" alt="Функциональное питание для котов!" width="280" height="270">
+                <div class="short-description__wrapper ">
+                    <h1 class="short-description__title title">Функциональное питание для котов</h1>
+                    <span class="short-description__title-add">Занялся собой? Займись котом!</span>
+                </div>
+                <img class="short-description__photo" src="img/index-can-mobile@1x.png" alt="Функциональное питание для котов!" width="280" height="270">
                 <a class="short-description__link button" href="#">
                     Подобрать программу
                 </a>
@@ -91,10 +95,10 @@
                 <div class="examples-slider">
                     <ul class="examples-slider__slides-wrapper">
                        <li class="examples-slider__slide">
-                           <img class="slide__image" src="https://via.placeholder.com/150x150"" alt="Борис до того, как узнал о Cat Energy" width="311" height="232">
+                           <img class="slide__image" src="https://via.placeholder.com/150x150" alt="Борис до того, как узнал о Cat Energy" width="311" height="232">
                         </li>
                         <li class="examples-slider__slide">
-                            <img class="slide__image" src="https://via.placeholder.com/150x150"" alt="Борис после того, как узнал о Cat Energy" width="311" height="232">
+                            <img class="slide__image" src="https://via.placeholder.com/150x150" alt="Борис после того, как узнал о Cat Energy" width="311" height="232">
                         </li>
                     </ul>
                     <div class="examples-slider__controllers">
