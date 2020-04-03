@@ -1,0 +1,50 @@
+.catalog__title {
+margin-bottom: 35px;
+margin-left: 20px;
+}
+
+.catalog__list {
+display: flex;
+flex-direction: column;
+
+margin: 0;
+padding: 0;
+
+list-style: none;
+}
+
+.catalog__item {
+display: flex;
+flex-wrap: wrap;
+
+padding-right: 20px;
+padding-left:20px;
+
+border-top: 1px solid #ededed;
+border-bottom: 1px solid #ededed;
+}
+
+.catalog__button {
+min-height: 28px;
+margin-bottom: 24px;
+}
+
+.catalog__showmore {
+position: relative;
+
+min-height: 210px;
+
+  &::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: calc(50% - 16.5px);
+
+  display: block;
+  width: 31px;
+  height: 31px;
+
+  background-image: url(/img/icon-plus-mobile.svg);
+  opacity: 0.2;
+  }
+}
