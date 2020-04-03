@@ -9,12 +9,13 @@ list-style: none;
 }
 
 .programs__item {
-background-color: #f2f2f2;
-padding: 22px 20px 22px 20px;
 position: relative;
-border-top: 1px solid transparent;
+
 margin-bottom: 20px;
- 
+padding: 22px 20px 22px 20px;
+border-top: 1px solid transparent;
+
+background-color: #f2f2f2; 
 }
 
 .programs__icon {
@@ -30,59 +31,59 @@ background-color: @leaf;
 }
 
 .programs__icon--slim::before {
-    content: "";
+  content: "";
 
-    position: absolute;
-    left: calc(50% - 17.5px);
+  position: absolute;
+  left: calc(50% - 17.5px);
 
-    display: block;
-    width:35px;
-    height:49px;
+  display: block;
+  width:35px;
+  height:49px;
 
-    background-image: url(/img/icon-cat-slim.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  background-image: url(/img/icon-cat-slim.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .programs__icon--gaining::before {
-    content: "";
+  content: "";
 
-    position: absolute;
-    top: calc(50% - 14px);
-    left: calc(50% - 33.5px);
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 33.5px);
 
-    display: block;
-    width: 67px;
-    height: 28px;
+  display: block;
+  width: 67px;
+  height: 28px;
     
-    background-image: url(/img/icon-cat-pro.svg);
-    background-size: 67px 28px;
-    background-repeat: no-repeat;
+  background-image: url(/img/icon-cat-pro.svg);
+  background-size: 67px 28px;
+  background-repeat: no-repeat;
 }
-
 
 .programs__title {
 margin: 0;
-
-margin-left: 70px;
 margin-top: 10px;
+margin-left: 70px;
 
-color: #111111;
 font-size: 24px;
 line-height: 37px;
-text-align: left;
 text-transform: uppercase;
 font-weight: 400;
+text-align: left;
+color: #111111;
 }
 
 .programs__description {
 position: relative;
 
 margin-bottom: 45px;
-color:#444444;
+
 line-height: 18px;
 font-family: @arial;
 text-align: left;
+color:#444444;
+
   &::after {
       content: "";
       position: absolute;
@@ -92,6 +93,7 @@ text-align: left;
       display: block;
       width: 240px;
       height: 1px;
+
       background-color: #000000;
       opacity: 0.1;
       
@@ -100,10 +102,12 @@ text-align: left;
 
 .programs__link {
 position: relative;
-text-transform: uppercase;
+
 font-size: 16px;
 line-height: 16px;
+text-transform: uppercase;
 color: #111111;
+
   &::after {
     content: "";
 
@@ -117,13 +121,16 @@ color: #111111;
 
     background-image: url(/img/icon-right-arrow-long.svg);
   }
+
   &:hover {
-      &::after {
+
+    &::after {
     background-image: url(/img/icon-right-arrow-verylong.svg);
     background-repeat: no-repeat;
     background-position: 0px 2px;
-      }
+    }
   }
+  
   &:active {
     color: rgba(17, 17, 17, 0.3);
     &::after {

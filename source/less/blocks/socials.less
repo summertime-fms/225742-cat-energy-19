@@ -1,0 +1,45 @@
+.socials__list {
+width:inherit;
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0;
+padding: 0;
+
+list-style: none;
+}
+
+.socials__item:not(:last-of-type) {
+margin-right: 38px;
+}
+
+.socials__link {
+display: block;
+width: 25px;
+height: 25px;
+
+  &--vk {
+  background-image: url(/img/icon-vk.svg);
+  background-size: 22px 12px;
+
+  &:hover {
+    color: @leaf;
+    }
+  }
+
+  &--inst {
+  background-image: url(/img/icon-insta.svg);
+  background-size: 17px 17px;
+  }
+  
+  &--fb {
+  background-image: url(/img/icon-fb.svg);
+  background-size: 10px 19px;
+  }
+  
+background-position: 50% 50%;
+background-repeat: no-repeat;
+
+cursor: pointer;
+}
