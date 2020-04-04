@@ -30,23 +30,26 @@
         </header>
         <main class="main-page">
             <h1 class="title form-title">Подбор программы</h1>
-            <p class="form__details-text">
+            <p class="form-title__details">
                 Заполните анкету и мы подберем программу питания для вашего кота
             </p>
             <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-                <fieldset class="form__fieldset form__fieldset--cat-data">
-                    <legend class="visually-hidden form__legend cat-data">Данные кота</legend>
-                    <label class="form__label"> Имя:*
-                        <input class="form__input" type="text" name="cat-name" value="" placeholder="Барсик" required>
-                    </label>
-                    <label class="form__label"> Вес (кг):*
-                        <input class="form__input" type="number" name="cat-weight" value="" placeholder="7" required>
-                    </label>
-                    <label class="form__label"> Возраст:
-                       <input class="form__input" type="number" name="cat-age" value="" placeholder="7">
-                    </label>
+                <fieldset class="form__fieldset cat-data">
+                    <legend class="visually-hidden form__legend">Данные кота</legend>
+                    <p class="form__item">
+                        <label class="form__label" for="cat-name"> Имя:* </label>
+                        <input class="form__input" type="text" name="cat-name" id="cat-name" value="" placeholder="Барсик" required>
+                    </p>
+                    <p class="form__item">
+                    <label class="form__label" for="cat-weight"> Вес (кг):*</label>
+                        <input class="form__input" type="number" name="cat-weight" id="cat-weight" value="" placeholder="7" required>
+                    </p>
+                    <p class="form__item">
+                    <label class="form__label" for="cat-age"> Возраст (лет):</label>
+                       <input class="form__input" type="number" name="cat-age" id="cat-age" value="" placeholder="7">
+                    </p>
                 </fieldset>
-                <fieldset class="form__fieldset form__fieldset--program-choose">
+                <fieldset class="form__fieldset program-choose">
                     <legend class="visually-hidden form__legend program-choose">
                         Выберите подходящую программу
                     </legend>
