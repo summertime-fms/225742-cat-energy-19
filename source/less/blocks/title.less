@@ -1,6 +1,30 @@
 .title {
 font-size: 36px;
-line-height: 36px;
+line-height: 1;
 color: #111111;
 font-weight: 400;
-}
+margin-right: 0;
+
+
+
+  &--green-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    white-space: nowrap;
+
+      &::after {
+        content: "";
+        
+        margin-left: 22px;
+        width: 100%;
+        margin-top: 3px;
+        height: 3px;
+        background-color: @leaf;
+        padding-left: 15px;
+        
+      
+      }
+    
+}}
