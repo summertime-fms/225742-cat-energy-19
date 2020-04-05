@@ -1,0 +1,146 @@
+.form {
+margin-bottom: 23px;
+}
+
+.form__fieldset {
+margin: 0;
+margin-bottom: 31px;
+padding: 0;
+border: none;
+
+}
+
+.form__legend {
+width: -webkit-fill-available;
+margin-bottom: 31px;
+padding-left: 20px;
+
+font-size: 24px;
+line-height: 1;
+color: #111111;
+
+  
+}
+
+
+.form__label {
+margin-bottom: 14px;
+margin-top: 15px;
+margin-right: 15px;
+font-size: 16px;
+line-height: 1.13;
+text-align: left;
+
+color: #222222;
+text-transform: uppercase;
+
+white-space: nowrap;
+
+  &--program-choose {
+    position: relative;
+  
+  
+  &::before {
+  content: "";
+
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+  border: 1px solid #cdcdcd;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 8px;
+    left: 10px;
+  
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+
+    background-color: @leaf;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    }
+}
+  &--additional-product {
+      position: relative;
+
+      &::before {
+      content: "";
+
+      display: inline-block;
+      margin-right: 16px;
+      vertical-align: middle;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+
+      cursor: pointer;
+      }
+      &::after {
+      content: "";
+
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      display: block;
+      width: 22px;
+      height: 17px;
+      background-image: url(/img/icon-tick.svg);
+
+      cursor: pointer;
+      }
+  }
+}
+.form__input {
+   
+width: 100%;
+height: 45px;
+margin-left: 10px;
+flex-grow: 2;
+padding-left: 10px;
+opacity: 0.5;
+border: 1px solid #cdcdcd;
+}
+
+.form__item {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    &:not(:last-of-type) {
+    margin-bottom: 14px;
+    }
+}
+
+.form__button {
+height: 40px;
+padding-bottom: 10px;
+font-family: "Oswald", "Helvetica", sans-serif;
+font-size: 14px;
+line-height: 1.25;
+font-weight: 400;
+border: none;
+
+cursor: pointer;
+}
+
+.form__required-details {
+display: block;
+margin-bottom: 34px;
+text-align: center;
+font-family: @arial;
+line-height: 1.14;
+color: #444444;
+}
