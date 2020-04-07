@@ -1,3 +1,27 @@
+.showmore {
+  position: relative;
+  justify-content: center;
+  min-height: 210px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: calc(50% - 16.5px);
+
+    display: block;
+    width: 31px;
+    height: 31px;
+
+    background-image: url(/img/icon-plus-mobile.svg);
+    opacity: 0.2;
+    }
+
+    @media (min-width: 768px) {
+      background-color: #ffffff;
+    }
+  }
+
 .showmore__title{
 padding-top: 83px;
 
@@ -10,7 +34,7 @@ color: #111111;
 .showmore__text {
 font-size: 12px;
 line-height: 16px;
-font-family: @arial;
+font-family: @content-font;
 text-align: center;
 color: #444444;
 }

@@ -1,11 +1,24 @@
 .short-description {
+display: flex;
+flex-direction: column;
+
+width: 100%;
 margin-bottom: 22px;
 }
 
 .short-description__wrapper {
 min-height: 305px;
 
+background-color: @leaf;
 background-image: url("..//img/index-background-mobile@1x.jpg");
+@media (min-width: 768px) {
+  order: 1;
+  background-image: none;
+  background-color: #ffffff;
+  min-height: fit-content;
+  margin-left: 120px;
+
+}
 }
 
 .short-description__title {
@@ -15,6 +28,11 @@ margin-bottom: 19px;
 
 text-align: center;
 color: #ffffff;
+@media (min-width: 768px) {
+text-align: left;
+min-width: 346px;
+ color: #111111;
+}
 }
 
 .short-description__title-add {
@@ -22,13 +40,34 @@ display: block;
 
 font-size: 14px;
 line-height: 14px;
+font-weight: normal;
 text-align: center;
 color:#ffffff;
 text-transform: uppercase;
+@media (min-width: 768px) {
+  color: #111111;
+  margin-bottom: 48px;
+}
 }
 
 .short-description__photo {
 display: block;
 margin: 0 auto;
 margin-top: -135px;
+}
+.short-description__photo-wrapper {
+  @media (min-width: 768px) {
+  order: 3;
+  margin-top: 160px;
+
+  }
+}
+
+.short-description__link {
+  @media (min-width: 768px) {
+    order: 2;
+    width: 245px;
+    margin-left: 120px;
+
+  }
 }

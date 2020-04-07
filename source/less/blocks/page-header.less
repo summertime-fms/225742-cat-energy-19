@@ -1,7 +1,13 @@
 .page-header {
+display: flex;
+flex-direction: column;
+@media (min-width: 768px) {
+  width: 100%;
+  flex-direction: row;
 
-width: 320px;
-padding-top: 11px;
+  }
+min-width: 320px;
+
 }
 
 .page-header__logo {
@@ -10,6 +16,7 @@ position: relative;
 display: block;
 width: 191px;
 height: 39px;
+padding-top: 11px;
 margin-bottom: 15px;
-margin-left: 20px;
+margin-left: 10%;
 }
