@@ -1,10 +1,13 @@
 .programs {
-.centr;
+min-width: 320px;
 margin-bottom: 32px;
 }
 .programs__list {
+min-width: 280px;
+padding-right: 20px;
+padding-left: 20px;
 
-padding: 0;
+
 
 list-style: none;
 }
@@ -16,7 +19,7 @@ margin-bottom: 20px;
 padding: 22px 20px 22px 20px;
 border-top: 1px solid transparent;
 
-background-color: #f2f2f2; 
+background-color: #f2f2f2;
 }
 
 .programs__icon {
@@ -56,7 +59,7 @@ background-color: @leaf;
   display: block;
   width: 67px;
   height: 28px;
-    
+
   background-image: url(/img/icon-cat-pro.svg);
   background-size: 67px 28px;
   background-repeat: no-repeat;
@@ -81,7 +84,7 @@ position: relative;
 margin-bottom: 45px;
 
 line-height: 18px;
-font-family: @arial;
+font-family: @content-font;
 text-align: left;
 color:#444444;
 
@@ -97,7 +100,7 @@ color:#444444;
 
       background-color: #000000;
       opacity: 0.1;
-      
+
   }
 }
 
@@ -125,3 +128,52 @@ color: #111111;
 
 }
 
+@media (min-width: @tablet-width) {
+  .programs__item {
+  height: auto;
+  padding: 81px 62px 62px 52px;
+  }
+  .programs__icon {
+  float: right;
+  width: 200px;
+  height:200px;
+  }
+  .programs__title {
+  margin: 0;
+  }
+  .programs__description {
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+
+  margin-left: 110px;
+  margin-right: 110px;
+  }
+  .programs__list {
+  display: flex;
+  flex-direction: row;
+  }
+  .programs__item {
+  width: 570px;
+
+  height: auto;
+  padding: 41px 56px 62px 53px;
+    &:nth-child(2n) {
+      margin-left: 80px;
+    }
+  }
+  .programs__icon {
+    float: left;
+    width: 100px;
+    height:100px;
+
+  }
+
+  .programs__title{
+    margin-bottom: 75px;
+
+  }
+}

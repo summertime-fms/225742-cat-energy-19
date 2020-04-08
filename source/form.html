@@ -2,8 +2,9 @@
 <html lang="ru">
     <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
       <link rel="stylesheet" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+
       <title>HTML Academy. Проект Cat Energy</title>
     </head>
     <body class="page-body">
@@ -16,13 +17,13 @@
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
-                            <a href="index.html">Главная</a>
+                            <a class="main-nav__link" href="index.html">Главная</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="catalog.html">Каталог продукции</a>
+                            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
                         </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link--active" href="form.html">Подбор программы</a>
+                        <li class="main-nav__item main-nav__item--active">
+                            <a class="main-nav__link" href="form.html">Подбор программы</a>
                         </li>
                     </ul>
                 </div>
@@ -39,17 +40,17 @@
                         <p class="form__item">
                             <label class="form__label" for="cat-name"> Имя:*</label>
                                 <input class="form__input" type="text" name="cat-name" id="cat-name" value="" placeholder="Барсик" required>
-                            
+
                         </p>
                         <p class="form__item">
                             <label class="form__label" for="cat-weight"> Вес (кг):*</label>
                                 <input class="form__input" type="number" name="cat-weight" id="cat-weight" value="" placeholder="7" required>
-                            
+
                         </p>
                         <p class="form__item">
                             <label class="form__label" for="cat-age"> Возраст (лет):</label>
                                 <input class="form__input" type="number" name="cat-age" id="cat-age" value="" placeholder="7">
-                          
+
                         </p>
                 </fieldset>
                 <fieldset class="form__fieldset program-choose">
@@ -124,38 +125,42 @@
             <span class="form__required-details">* — Обязательные поля</span>
         </main>
         <footer class="page-footer">
-            <div class="page-footer__contacts contacts">
-                <h2 class="title contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-                <address class="page-footer__address address">
-                    ул. Большая Конюшенная, д. 19/8 
-                    Санкт-Петербург
-                </address>
-            </div>
-            <div class="page-footer__map-wrapper">
-                <img class="page-footer__map map" src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
-                 </div>
-                    <div class="page-footer__logo-wrapper">
+          <div class="page-footer__contacts contacts">
+              <h2 class="title contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+              <address class="contacts__address">
+                  ул. Большая Конюшенная, д. 19/8
+                  Санкт-Петербург
+              </address>
+          </div>
+          <div class="page-footer__wrapper">
+              <div class="page-footer__map-wrapper">
+                  <img class="page-footer__map map" src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
+              </div>
+              <div class="page-footer__info">
+                <div class="page-footer__logo-wrapper">
                     <img class="page-footer__logo" src="img/logo-footer.svg" alt="Cat energy. Питание для вашего кота" width="128" height="24">
-                    </div>
-                <div class="page-footer__socials socials">
-                    <ul class="socials__list">
-                        <li class="socials__item">
-                            <a class="socials__link socials__link--vk" title="Вконтакте" aria-label="Вконтакте"></a>
-                        </li>
-                        <li class="socials__item">
-                            <a class="socials__link socials__link--inst" title="Инстаграм" aria-label="Инстаграм"> </a>
-                        </li>
-                        <li class="socials__item">
-                            <a class="socials__link socials__link--fb" title="Фейсбук" aria-label="Фейсбук"></a>
-                        </li>
-                    </ul>
                 </div>
-            <div class="page-footer__copyright copyright">
-                <span class="copyright__name">HTML Academy</span>
-                <a class="copyright__image-wrapper" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
-                  <img class="copyright__image" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
-                </a>
-            </div>
-        </footer>
+                <div class="page-footer__socials socials">
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <a class="socials__link socials__link--vk" title="Вконтакте" aria-label="Вконтакте"></a>
+                    </li>
+                    <li class="socials__item">
+                      <a class="socials__link socials__link--inst" title="Инстаграм" aria-label="Инстаграм"> </a>
+                    </li>
+                      <li class="socials__item">
+                        <a class="socials__link socials__link--fb" title="Фейсбук" aria-label="Фейсбук"></a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="page-footer__copyright copyright">
+                  <span class="copyright__name">HTML Academy</span>
+                  <a class="copyright__image-wrapper" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
+                    <img class="copyright__image" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+                  </a>
+              </div>
+          </div>
+          </div>
+      </footer>
     </body>
 </html>
