@@ -2,9 +2,17 @@
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-width: 280px;
+min-width: 280px;
+margin-left: 20px;
 
 margin-bottom: 44px;
+}
+
+.stats__items {
+min-width: 280px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 
 .stats__item {
@@ -55,4 +63,31 @@ line-height: 20px;
 text-transform: uppercase;
 font-weight: 400;
 color: #111111;
+}
+
+@media (min-width: @tablet-width) {
+  .stats {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 72px;
+  margin-right: 30px;
+  }
+
+  .stats__items{
+  max-width: 450px;
+  }
+
+  .stats__expenses {
+    margin: 0;
+    width: 180px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 1;
+
+  }
+  .stats__property {
+  background-color: #ffffff;
+  }
 }
