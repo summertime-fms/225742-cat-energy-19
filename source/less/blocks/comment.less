@@ -1,8 +1,19 @@
 .comment__field {
-width: 280px;
+min-width: 280px;
 min-height: 150px;
-margin-right: 20px;
-margin-left: 20px;
-
 resize: none;
+padding: 0;
+margin: 0;
+padding-top: 15px;
+padding-left: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+  margin-bottom: 71px;
+  }
+
+  .comment__field {
+    min-height: 175px;
+  }
 }

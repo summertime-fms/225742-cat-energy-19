@@ -1,6 +1,8 @@
 .form {
 margin-bottom: 23px;
-width: 320px;
+min-width: 280px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 .form__fieldset {
@@ -14,13 +16,14 @@ border: none;
 .form__legend {
 width: -webkit-fill-available;
 margin-bottom: 31px;
-padding-left: 20px;
 
 font-size: 24px;
 line-height: 1;
 color: #111111;
 
-
+  &--owner-data {
+    width: 80%;
+  }
 }
 
 
@@ -105,16 +108,48 @@ white-space: nowrap;
       }
   }
 }
-.form__input {
 
+.form__input {
 width: 100%;
 height: 45px;
 margin-left: 10px;
 flex-grow: 2;
+padding: 0;
 padding-left: 10px;
-opacity: 0.5;
 border: 1px solid #cdcdcd;
+border-color: rgba(#cdcdcd, 50%);
+
+font-family: "Oswald", "Helvetica", sans-serif;
+color: #444444;
+font-size: 20px;
 }
+
+::-webkit-input-placeholder {
+
+  font-size: 16px;
+  line-height: 1.13;
+  color: rgba(#444444, 100%);
+  font-family: "Oswald", "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.13;
+  color: rgba(#444444, 100%);
+  font-family: "Oswald", "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.13;
+  color: rgba(#444444, 100%);
+  font-family: "Oswald", "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+
 
 .form__item {
     margin: 0;
@@ -126,7 +161,9 @@ border: 1px solid #cdcdcd;
 }
 
 .form__button {
+width: 100%;
 height: 40px;
+margin-bottom: 32px;
 padding-bottom: 10px;
 font-family: "Oswald", "Helvetica", sans-serif;
 font-size: 14px;
@@ -138,11 +175,77 @@ cursor: pointer;
 }
 
 .form__required-details {
-  width: 320px;
 display: block;
 margin-bottom: 34px;
 text-align: center;
 font-family: @content-font;
 line-height: 1.14;
 color: #444444;
+}
+
+
+@media (min-width: @tablet-width) {
+  .form {
+  margin-left: 70px;
+  margin-right: 66px;
+  }
+
+  .form__input {
+    min-height: 53px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  :-ms-input-placeholder {
+  font-size: 20px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 20px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+
+  .form__label {
+  font-size: 20px;
+  line-height: 1;
+  }
+
+  .form__item {
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+  }
+
+  .form__legend {
+    font-size: 36px;
+    line-height: 1;
+
+    &--owner-data {
+      margin-bottom: 70px;
+    }
+  }
+
+  .form__button {
+    width: 41.5%;
+
+    min-height: 52px;
+    margin: 0;
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  .form__required-details {
+    margin-left: 61px;
+    display: inline-block;
+    vertical-align: super;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .form__label--program-choose::after {
+    top: 11px;
+  }
 }
