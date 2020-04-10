@@ -5,8 +5,12 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 margin: 0;
-padding: 0;
 
+padding: 0;
+padding-top: 21px;
+padding-bottom: 21px;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 list-style: none;
 }
 
@@ -34,9 +38,15 @@ cursor: pointer;
   background-image: url(/img/icon-insta.svg);
   background-size: 17px 17px;
   }
-  
+
   &--fb {
   background-image: url(/img/icon-fb.svg);
   background-size: 10px 19px;
   }
 }
+ @media (min-width: @tablet-width) {
+   .socials__list {
+    padding: 0;
+    border: none;
+   }
+ }
