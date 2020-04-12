@@ -3,8 +3,6 @@
 .form-additional__list {
 margin: 0;
 padding: 0;
-padding-left: 20px;
-padding-right: 20px;
 
 list-style: none;
 }
@@ -14,4 +12,38 @@ list-style: none;
     margin-bottom: 13px;
   }
 
+}
+
+@media (min-width: @tablet-width) {
+  .form-additional {
+    margin-bottom: 50px;
+  }
+
+.form-additional__title {
+margin-bottom: 53px;
+}
+
+.form-additional__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 115px;
+  align-content: space-between;
+
+
+}
+
+.form-additional__item {
+ min-width: 39%;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .form-additional {
+    width: 100%;
+  }
+
+  .form-additional__item {
+    min-width: 15%;
+  }
 }

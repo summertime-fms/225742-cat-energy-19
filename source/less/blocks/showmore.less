@@ -1,28 +1,27 @@
 .showmore {
   position: relative;
-  justify-content: center;
+  flex-direction: column;
   min-height: 210px;
+
 
     &::before {
     content: "";
-    position: absolute;
-    top: 27px;
-    left: calc(50% - 16.5px);
 
-    display: block;
     width: 31px;
     height: 31px;
-
+    margin: 27px auto;
+    margin-bottom: 25px;
     background-image: url(/img/icon-plus-mobile.svg);
     opacity: 0.2;
     }
   }
 
 .showmore__title{
-padding-top: 83px;
+width: 73%;
+margin: 0 auto;
 
 font-size: 16px;
-line-height: #111111;
+text-transform: uppercase;
 text-align: center;
 color: #111111;
 }
@@ -30,6 +29,7 @@ color: #111111;
 .showmore__text {
 font-size: 12px;
 line-height: 16px;
+margin-bottom: 22px;
 font-family: @content-font;
 text-align: center;
 color: #444444;
@@ -47,16 +47,60 @@ background-color: #f2f2f2;
 
 @media (min-width: @tablet-width) {
   .showmore {
-    &::before {
     background-color: #ffffff;
-    }
+    &::before {
+      background-image: url(..//img/icon-plus.svg);
+      margin: 55px auto;
+      margin-bottom: 50px;
+      width: 61px;
+      height: 61px;
+      }
+  }
+  .showmore__title{
+    font-size: 20px;
+    width: 42%;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .showmore__button {
+    min-height: 40px;
+  }
+
+  .showmore__text {
+    font-size: 16px;
+    width: 52%;
+    margin-bottom: 85px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .showmore {
-    flex-grow: 1;
+
     margin-left: 30px;
     background-color: #ffffff;
+    border: 1px solid #eaeaea;
+
+      &::before {
+        margin: 19px auto;
+        margin-bottom: 49px;
+      }
   }
+
+  .showmore__title {
+    width: 66%;
+    line-height: 1;
+  }
+
+  .showmore__text {
+    margin: 0;
+    width: 81%;
+    margin-bottom: 87px;
+  }
+
+  .showmore__button {
+    margin-bottom: 110px;
+  }
+
+
 }

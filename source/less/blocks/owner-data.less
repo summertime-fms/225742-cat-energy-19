@@ -1,4 +1,41 @@
-.owner-data__wrapper {
-padding-left: 20px;
-padding-right: 20px;
+.owner-data__input {
+
+  &--email {
+    background-image: url(..//img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 14px;
+    background-position: 95%;
 }
+&--phone {
+  background-image: url(..//img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+
+  background-position: 95%;
+}
+}
+
+@media (min-width: @tablet-width) {
+  .owner-data {
+  margin-bottom: 70px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .owner-data {
+    width: 100%;
+  }
+
+  .owner-data__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .owner-data__item {
+  width: 46.5%;
+  }
+}
+
+

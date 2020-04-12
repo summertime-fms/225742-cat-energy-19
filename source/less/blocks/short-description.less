@@ -1,27 +1,27 @@
 .short-description {
 display: flex;
 flex-direction: column;
-
-
 margin-bottom: 22px;
-min-height: 305px;
+height: 490px;
 
-background-image: url("..//img/index-background-mobile@1x.jpg");
-background-repeat: no-repeat;
+background-image: url("..//img/index-can-mobile@1x.png"), url(..//img/index-background-mobile@1x.jpg);
+background-repeat: no-repeat, no-repeat;
+background-position: 50% 76%, 0% 0%;
 }
+
 
 .short-description__title {
 margin: 0;
 padding-top: 30px;
 margin-bottom: 19px;
-order: 1;
+
 text-align: center;
 color: #ffffff;
 }
 
 .short-description__title-add {
 display: block;
-order: 2;
+margin-bottom: 302px;
 font-size: 14px;
 line-height: 14px;
 font-weight: normal;
@@ -30,39 +30,91 @@ color:#ffffff;
 text-transform: uppercase;
 }
 
-.short-description__photo-wrapper {
-margin: 0 auto;
-margin-top: 30px;
-order: 3;
-}
-
 .short-description__link {
-order: 4;
+  width: 280px;
 }
-
 @media (min-width: @tablet-width) {
   .short-description {
-    background-image: none;
+    height: 800px;
+    margin-bottom: 0;
+    background-image: url("..//img/index-can-tablet@1x.jpg");
+    background-position: 60% 112%;
     background-color: #ffffff;
     min-height: fit-content;
-    margin-left: 120px;
+
   }
   .short-description__title {
     text-align: left;
-    min-width: 346px;
+    font-size: 60px;
+    line-height: 1;
+    width: 65%;
     color: #111111;
+    margin-bottom: 33px;
   }
   .short-description__title-add {
     color: #111111;
+    font-size: 20px;
     text-align: left;
     margin-bottom: 48px;
   }
-  .short-description__photo-wrapper {
 
-  }
   .short-description__link {
-    order: 3;
     margin-left: 0;
-    width: 245px;
+    min-height: 42px;
+    padding-top: 12px;
+    max-width: 245px;
+  }
+
+  .short-description__content {
+    margin-left: 120px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .short-description {
+    height: 555px;
+    margin-bottom: 123px;
+    background-image: url(..//img/index-can-desktop@1x.png);
+    background-position: 63% 78%;
+    z-index: 3;
+    background-color: transparent;
+
+     &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: block;
+      width: 720px;
+      height:696px;
+
+      background-image: url("..//img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      z-index: -4;
+    }
+  }
+
+    .short-description__content {
+    margin-top: 95px;
+    margin-left: 13.5%;
+    }
+
+    .short-description__title {
+      width: 34%;
+      margin-bottom: 44px;
+    }
+
+    .short-description__title-add {
+      margin-bottom: 55px;
+    }
+
+    .short-description__link {
+      padding-top: 16px;
+      font-size: 20px;
+      min-height: 52px;
+    }
+
+  }
+

@@ -11,18 +11,25 @@ margin-right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-   
+
+
       &::after {
         content: "";
         align-self: start;
         flex-grow: 1;
         margin-left: 22px;
-        
+
         margin-top: 15px;
         height: 3px;
         background-color: @leaf;
         padding-left: 15px;
       }
-    
+
 }}
+
+@media (min-width: @desktop-width) {
+  .title {
+  font-size: 60px;
+  line-height: 1;
+  }
+}
