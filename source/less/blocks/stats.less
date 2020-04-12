@@ -75,19 +75,63 @@ color: #111111;
   margin-right: 30px;
   }
 
-  .stats__items{
-  max-width: 450px;
+  .stats__items {
+    width: 73%;
+    justify-content: flex-start;
+  }
+  .stats__item {
+    width: 162px;
+
+      margin-right: 42px;
+
   }
 
   .stats__expenses {
-    margin: 0;
-    width: 180px;
-    text-align: right;
-    font-size: 20px;
-    line-height: 1;
-
+  margin: 0;
+  width: 180px;
+  text-align: right;
+  font-size: 20px;
+  line-height: 1;
   }
+  .stats__value {
+  font-size: 30px;
+  line-height: 1.23;
+  }
+
   .stats__property {
   background-color: #ffffff;
+  left: 17%;
+  width: 67%;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .stats__expenses {
+    text-align: center;
+    width: 69%;
+    margin-top: 7%;
+  }
+
+  .stats__items {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .stats__item {
+    margin-right: 42px;
+  }
+
+  .stats__property {
+    background-color: #eaeaea;
+    left: 11%;
+    width: 80%;
   }
 }
