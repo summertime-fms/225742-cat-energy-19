@@ -1,31 +1,31 @@
 .features {
-min-width: 320px;
-margin-bottom: 22px;
+  min-width: 320px;
+  margin-bottom: 22px;
 }
 
 .features__title {
-margin-left: 20px;
+  margin-left: 20px;
 }
 
 .features__list {
-display: flex;
-flex-direction: column;
-min-width: 280px;
-margin: 0;
-padding: 0;
-padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
 
-list-style: none;
+  list-style: none;
 }
 
 .features__item {
-    display: flex;
-    align-items: center;
-    min-height: 60px;
-    width: 280px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  width: 280px;
+  margin-bottom: 20px;
 
-    &::before {
+  &::before {
     content: "";
 
     min-width: 60px;
@@ -33,24 +33,27 @@ list-style: none;
     margin-right: 20px;
 
     background-color: @leaf;
-    }
-    &--natural::before {
-    background-image: url(/img/advantage-leaf@1x.png);
-    background-position: 50% 50%;
-    }
-    &--easy::before {
-    background-image: url(/img/advantage-powder@1x.png);
-    background-position: 50% 50%;
-    }
-    &--comfort::before {
-    background-image: url(/img/advantage-dining@1x.png);
-    background-position: 50% 50%;
-    }
-    &--fast::before {
-    background-image: url(/img/advantage-clock@1x.png);
-    background-position: 50% 50%;
-    }
+  }
 
+  &--natural::before {
+    background-image: url("/img/advantage-leaf@1x.png");
+    background-position: 50% 50%;
+  }
+
+  &--easy::before {
+    background-image: url("/img/advantage-powder@1x.png");
+    background-position: 50% 50%;
+  }
+
+  &--comfort::before {
+    background-image: url("/img/advantage-dining@1x.png");
+    background-position: 50% 50%;
+  }
+
+  &--fast::before {
+    background-image: url("/img/advantage-clock@1x.png");
+    background-position: 50% 50%;
+  }
 }
 
 .features__text {
@@ -60,39 +63,38 @@ list-style: none;
 }
 
 @media (min-width: @tablet-width) {
-
   .features {
     margin-bottom: 0;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #f2f2f2;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #f2f2f2;
     }
   }
 
   .features__list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-  margin-right: 120px;
-  padding-left: 30px;
+    margin-right: 120px;
+    padding-left: 30px;
   }
 
   .features__title {
-  margin-bottom: 63px;
-  margin-left: 33px;
+    margin-bottom: 63px;
+    margin-left: 33px;
   }
 
 
   .features__item {
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 137px;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 137px;
 
 
     &::before {
@@ -101,6 +103,7 @@ list-style: none;
       margin-bottom: 37px;
       background-repeat: no-repeat;
     }
+
     &::after {
       font-size: 281px;
       line-height: 1;
@@ -112,28 +115,28 @@ list-style: none;
       content: "1";
       position: absolute;
       right: 0;
-      top:-20%;
+      top: -20%;
     }
 
     &--easy::after {
       content: "2";
       position: absolute;
       right: 0;
-      top:-20%;
+      top: -20%;
     }
 
     &--comfort::after {
       content: "3";
       position: absolute;
       right: 0;
-      top:-20%;
+      top: -20%;
     }
 
     &--fast::after {
       content: "4";
       position: absolute;
       right: 0;
-      top:-20%;
+      top: -20%;
     }
 
     .features__text {
@@ -144,7 +147,6 @@ list-style: none;
       width: 80%;
     }
   }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -153,17 +155,18 @@ list-style: none;
     padding-left: 2.3%;
     margin-bottom: 5.35%;
   }
+
   .features {
     padding-left: 5.5%;
     padding-right: 5.5%;
 
-      &::after {
-        display: none;
-      }
+    &::after {
+      display: none;
+    }
   }
+
   .features__list {
     width: 100%;
     margin: 0;
   }
-
 }
