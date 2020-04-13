@@ -42,7 +42,6 @@ list-style: none;
 
 .main-nav__item {
 min-height: 65px;
-min-width: 320px;
 text-align: center;
 border-top: 1px solid transparent;
 border-bottom: 1px solid #eaeaea;
@@ -97,6 +96,10 @@ flex-wrap: wrap;
 .main-nav__item {
 width: auto;
 margin-left: 4.8%;
+border: none;
+&:first-of-type {
+  border: none;
+}
 }
 
 .main-nav__link {
@@ -137,6 +140,7 @@ margin-left: 4.8%;
   }
 .main-nav__item {
   margin-left: 35px;
+  border: none;
 }
 
 .main-nav__link {
