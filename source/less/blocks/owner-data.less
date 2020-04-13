@@ -1,10 +1,20 @@
 .owner-data__input {
 
   &--email {
-    background-image: url(..//img/icon-mail.svg);
-    background-repeat: no-repeat;
-    background-size: 18px 14px;
-    background-position: 95%;
+
+     &::before {
+       content: "";
+
+       width: 18px;
+       height: 14px;
+       display: block;
+
+       background-image: url(..//img/icon-mail.svg);
+
+     }
+
+
+
 }
 &--phone {
   background-image: url(..//img/icon-phone.svg);

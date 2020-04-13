@@ -35,20 +35,26 @@ background-image: url("/img/icon-mobile-menu.svg");
 .main-nav__list {
 margin: 0;
 padding: 0;
+padding-top: 11px;
 
 list-style: none;
 }
 
 .main-nav__item {
 min-height: 65px;
-width: 320px;
+min-width: 320px;
 text-align: center;
 border-top: 1px solid transparent;
+border-bottom: 1px solid #eaeaea;
+
+  &:first-of-type {
+  border-top: 1px solid #eaeaea;
+  }
 }
 
 .main-nav__link {
 display: block;
-padding-top: 24px;
+padding-top: 21px;
 
 text-transform: uppercase;
 font-size: 20px;
