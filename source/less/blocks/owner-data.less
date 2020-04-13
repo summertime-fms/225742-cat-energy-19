@@ -1,33 +1,28 @@
 .owner-data__input {
-
   &--email {
+    &::before {
+      content: "";
 
-     &::before {
-       content: "";
+      width: 18px;
+      height: 14px;
+      display: block;
 
-       width: 18px;
-       height: 14px;
-       display: block;
+      background-image: url("..//img/icon-mail.svg");
+    }
+  }
 
-       background-image: url(..//img/icon-mail.svg);
+  &--phone {
+    background-image: url("..//img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
 
-     }
-
-
-
-}
-&--phone {
-  background-image: url(..//img/icon-phone.svg);
-  background-repeat: no-repeat;
-  background-size: 21px 21px;
-
-  background-position: 95%;
-}
+    background-position: 95%;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .owner-data {
-  margin-bottom: 70px;
+    margin-bottom: 70px;
   }
 }
 
@@ -44,8 +39,6 @@
   }
 
   .owner-data__item {
-  width: 46.5%;
+    width: 46.5%;
   }
 }
-
-
