@@ -111,6 +111,22 @@ line-height: 16px;
 text-transform: uppercase;
 color: #111111;
 
+  &:hover {
+     &::after {
+      background-image: url(/img/icon-right-arrow-verylong.svg);
+      background-position: 0px 0px;
+      width: 35px;
+     }
+  }
+
+    &:active {
+      color: rgba(17, 17, 17, 0.3);
+
+       &::after {
+        opacity: 0.3;
+       }
+    }
+
   &::after {
     content: "";
     position: absolute;
@@ -121,6 +137,8 @@ color: #111111;
     left: 100px;
 
     background-image: url(/img/icon-right-arrow-long.svg);
+
+
   }
 
 }
