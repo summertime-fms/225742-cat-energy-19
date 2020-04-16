@@ -6,21 +6,16 @@
   margin-right: 0;
 
   &--green-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
     &::after {
       content: "";
-      align-self: start;
-      flex-grow: 1;
-      margin-left: 22px;
+      display: inline-block;
+      position: relative;
 
-      margin-top: 15px;
+
       height: 3px;
-      background-color: @leaf;
-      padding-left: 15px;
+      background: @leaf;
+      vertical-align: middle;
+      left: 10%;
     }
   }
 }
