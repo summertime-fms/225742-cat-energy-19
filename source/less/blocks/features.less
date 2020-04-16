@@ -1,31 +1,31 @@
 .features {
-min-width: 320px;
-margin-bottom: 22px;
+  min-width: 320px;
+  margin-bottom: 22px;
 }
 
 .features__title {
-margin-left: 20px;
+  margin-left: 6.25%;
 }
 
 .features__list {
-display: flex;
-flex-direction: column;
-min-width: 280px;
-margin: 0;
-padding: 0;
-padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
 
-list-style: none;
+  list-style: none;
 }
 
 .features__item {
-    display: flex;
-    align-items: center;
-    min-height: 60px;
-    width: 280px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  width: 91.5%;
+  margin-bottom: 20px;
 
-    &::before {
+  &::before {
     content: "";
 
     min-width: 60px;
@@ -33,24 +33,27 @@ list-style: none;
     margin-right: 20px;
 
     background-color: @leaf;
-    }
-    &--natural::before {
-    background-image: url(/img/advantage-leaf@1x.png);
-    background-position: 50% 50%;
-    }
-    &--easy::before {
-    background-image: url(/img/advantage-powder@1x.png);
-    background-position: 50% 50%;
-    }
-    &--comfort::before {
-    background-image: url(/img/advantage-dining@1x.png);
-    background-position: 50% 50%;
-    }
-    &--fast::before {
-    background-image: url(/img/advantage-clock@1x.png);
-    background-position: 50% 50%;
-    }
+  }
 
+  &--natural::before {
+    background-image: url("/img/advantage-leaf@1x.png");
+    background-position: 50% 50%;
+  }
+
+  &--easy::before {
+    background-image: url("/img/advantage-powder@1x.png");
+    background-position: 50% 50%;
+  }
+
+  &--comfort::before {
+    background-image: url("/img/advantage-dining@1x.png");
+    background-position: 50% 50%;
+  }
+
+  &--fast::before {
+    background-image: url("/img/advantage-clock@1x.png");
+    background-position: 50% 50%;
+  }
 }
 
 .features__text {
@@ -60,80 +63,85 @@ list-style: none;
 }
 
 @media (min-width: @tablet-width) {
-
   .features {
     margin-bottom: 0;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #f2f2f2;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #f2f2f2;
     }
   }
 
   .features__list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-  margin-right: 120px;
-  padding-left: 30px;
+
+    padding-left: 30px;
+    margin-right: 12px;
   }
 
   .features__title {
-  margin-bottom: 63px;
-  margin-left: 33px;
+    margin-bottom: 72px;
+    margin-left: 30px;
+    font-size: 60px;
+    line-height: 1;
   }
 
 
   .features__item {
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 137px;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 133px;
+    width: 34%;
+    margin-right: 13.3%;
 
 
     &::before {
       width: 80px;
       height: 80px;
-      margin-bottom: 37px;
+      margin-bottom: 32px;
       background-repeat: no-repeat;
     }
+
     &::after {
       font-size: 281px;
+      position: absolute;
       line-height: 1;
       z-index: -1;
       color: #f2f2f2;
+      left: 116px;
+      top: -20%;
     }
 
     &--natural::after {
       content: "1";
-      position: absolute;
-      right: 0;
-      top:-20%;
     }
 
     &--easy::after {
       content: "2";
-      position: absolute;
-      right: 0;
-      top:-20%;
     }
 
-    &--comfort::after {
-      content: "3";
-      position: absolute;
-      right: 0;
-      top:-20%;
+    &--comfort {
+      margin-bottom: 105px;
+
+      &::after {
+        content: "3";
+      }
     }
 
-    &--fast::after {
-      content: "4";
-      position: absolute;
-      right: 0;
-      top:-20%;
+    &--fast {
+      margin-bottom: 105px;
+
+      &::after {
+
+        content: "4";
+      }
     }
 
     .features__text {
@@ -141,29 +149,33 @@ list-style: none;
       font-size: 16px;
       line-height: 1.5;
       color: #444444;
-      width: 80%;
     }
   }
-
 }
 
 @media (min-width: @desktop-width) {
   .features__title {
     margin: 0;
     padding-left: 2.3%;
-    margin-bottom: 5.35%;
+    margin-bottom: 5.65%;
   }
+
   .features {
     padding-left: 5.5%;
     padding-right: 5.5%;
 
-      &::after {
-        display: none;
-      }
+    &::after {
+      display: none;
+    }
   }
+
+  .features__item {
+    width: 19.6%;
+    margin-right: 2.3%;
+  }
+
   .features__list {
     width: 100%;
     margin: 0;
   }
-
 }

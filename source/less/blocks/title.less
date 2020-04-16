@@ -1,35 +1,28 @@
 .title {
-font-size: 36px;
-line-height: 1;
-color: #111111;
-font-weight: 400;
-margin-right: 0;
-
-
+  font-size: 36px;
+  line-height: 1;
+  color: #111111;
+  font-weight: 400;
+  margin-right: 0;
 
   &--green-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &::after {
+      content: "";
+      display: inline-block;
+      position: relative;
 
 
-      &::after {
-        content: "";
-        align-self: start;
-        flex-grow: 1;
-        margin-left: 22px;
-
-        margin-top: 15px;
-        height: 3px;
-        background-color: @leaf;
-        padding-left: 15px;
-      }
-
-}}
+      height: 3px;
+      background: @leaf;
+      vertical-align: middle;
+      left: 10%;
+    }
+  }
+}
 
 @media (min-width: @desktop-width) {
   .title {
-  font-size: 60px;
-  line-height: 1;
+    font-size: 60px;
+    line-height: 1;
   }
 }

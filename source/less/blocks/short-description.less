@@ -4,7 +4,7 @@
   margin-bottom: 22px;
   height: 490px;
 
-  background-image: url("..//img/index-can-mobile@1x.png"), url("..//img/index-background-mobile@1x.jpg");
+  background-image: url("..//img/index-can-mobile@1x.png"), url("..//img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, @grass 62.24%, transparent 62.24%);
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 76%, 0% 0%;
 }
@@ -35,12 +35,18 @@
   padding-bottom: 11px;
 }
 
+@media (min-width: 487px) {
+  .short-description__title-add {
+    margin-bottom: 340px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .short-description {
-    height: 800px;
+    height: 874px;
     margin-bottom: 0;
     background-image: url("..//img/index-can-tablet@1x.jpg");
-    background-position: 49% 139%;
+    background-position: 50% 100%;
     background-color: #ffffff;
     min-height: fit-content;
   }
@@ -73,17 +79,17 @@
   }
 
   .short-description__content {
-    margin-left: 15.2%;
+    margin-left: 15.5%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .short-description {
     height: 555px;
-    margin-bottom: 123px;
+    margin-bottom: 113px;
 
     background-image: url("..//img/index-can-desktop@1x.png");
-    background-position: 63% 78%;
+    background-position: 63% 60%;
     z-index: 3;
     background-color: transparent;
 
@@ -105,7 +111,7 @@
   }
 
   .short-description__content {
-    margin-top: 95px;
+    margin-top: 49px;
     margin-left: 13.2%;
   }
 
@@ -125,4 +131,3 @@
     min-height: 52px;
   }
 }
-
