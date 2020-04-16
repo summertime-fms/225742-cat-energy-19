@@ -2,8 +2,10 @@
 
   display: flex;
   align-items: center;
+}
 
-  background-color: #ffffff;
+.contacts__address-town {
+  display: block;
 }
 
 .contacts__title {
@@ -17,9 +19,10 @@
 }
 
 .contacts__address {
-  line-height: 1.25;
+  line-height: 1.43;
   font-family: @content-font;
   text-align: left;
+  font-size: 14px;
   color: #444444;
   font-style: normal;
 }
@@ -33,5 +36,12 @@
   .contacts__address {
     width: 25%;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts__address-town {
+    padding-top: 30px;
   }
 }
