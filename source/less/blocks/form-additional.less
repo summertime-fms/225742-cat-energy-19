@@ -1,9 +1,11 @@
-
+.form-additional__title {
+  margin-bottom: 35px;
+}
 
 .form-additional__list {
   margin: 0;
   padding: 0;
-
+  padding-left: 6.4%;
   list-style: none;
 }
 
@@ -11,6 +13,10 @@
   &:not(:last-of-type) {
     margin-bottom: 13px;
   }
+}
+
+.form-additional__checkbox:checked + label::after {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
