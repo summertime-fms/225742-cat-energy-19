@@ -8,14 +8,10 @@
   &--green-line {
     &::after {
       content: "";
-      display: inline-block;
-      position: relative;
-
-
-      height: 3px;
-      background: @leaf;
-      vertical-align: middle;
-      left: 10%;
+      margin-left: 10px;
+      height: 0.5em;
+      flex-grow: 1;
+      border-bottom: 3px solid @leaf;
     }
   }
 }
