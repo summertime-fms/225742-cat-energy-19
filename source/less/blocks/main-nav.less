@@ -1,8 +1,12 @@
+.main-nav {
+  border-bottom: 1px solid #eaeaea;
+}
+
 .main-nav__logo-wrapper {
   display: inline-block;
   position: relative;
   width: 191px;
-  height: 37px;
+
 
   &:hover {
     opacity: 0.8;
@@ -16,31 +20,81 @@
 .main-nav__container {
   width: 280px;
   margin: 0 auto;
-  margin-top: 11px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .main-nav__toggle {
   border: none;
   background: none;
   position: absolute;
-  top: 23px;
-  right: 22px;
-  width: 19px;
-  height: 15px;
+  top: 24px;
+  right: 16px;
+  width: 28px;
+  height: 18px;
   background-repeat: no-repeat;
   background-image: url("/img/icon-mobile-menu.svg");
+  outline: none;
+
+  &--close {
+    background-image: url("/img/icon-close.svg");
+    height: 18px;
+    width: 25px;
+  }
+}
+
+@keyframes menu__falling {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menu__closing {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(50px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(-300px);
+    opacity: 0;
+    display: none;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
-  padding-top: 11px;
+
 
   list-style: none;
+
+  &--close {
+    animation: menu__closing 0.6s;  /* ????? */
+    display: none;
+  }
+
+
+  &--open {
+    display: block;
+    animation: menu__falling 0.6s;
+  }
 }
 
 .main-nav__item {
-  min-height: 65px;
+  min-height: 67px;
   text-align: center;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #eaeaea;
@@ -52,7 +106,7 @@
 
 .main-nav__link {
   display: block;
-  margin-top: 21px;
+  margin-top: 18px;
 
   text-transform: uppercase;
   font-size: 20px;
@@ -76,6 +130,7 @@
     margin-left: 4%;
     margin-right: 4%;
     align-items: flex-end;
+    border: none;
   }
 
   .main-nav__container {
@@ -90,11 +145,15 @@
     justify-content: flex-end;
     flex-grow: 1;
     flex-wrap: wrap;
+
+    &--close {
+      animation: none;
+    }
   }
 
   .main-nav__item {
     width: auto;
-    margin-left: 4.8%;
+    margin-left: 6.8%;
     border: none;
 
     &:first-of-type {
@@ -103,7 +162,7 @@
   }
 
   .main-nav__link {
-    margin-top: 31px;
+    margin-top: 20px;
     font-size: 18px;
     line-height: 1.39;
     color: #222222;
