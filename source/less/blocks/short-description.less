@@ -43,22 +43,27 @@
 
 @media (min-width: @tablet-width) {
   .short-description {
-    height: 862px;
+    height: 865px;
     margin-bottom: 0;
     background-image: url("..//img/index-can-tablet@1x.jpg");
     background-position: 50% 100%;
     background-color: #ffffff;
     min-height: fit-content;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("/img/index-can-tablet@2x.jpg");
+      background-size: 92% 70.4%;
+    }
   }
 
   .short-description__title {
-    padding-top: 50px;
+    padding-top: 54px;
     text-align: left;
     font-size: 60px;
     line-height: 1;
     width: 65%;
     color: #111111;
-    margin-bottom: 43px;
+    margin-bottom: 45px;
   }
 
   .short-description__title-add {
@@ -79,7 +84,7 @@
   }
 
   .short-description__content {
-    margin-left: 15.5%;
+    margin-left: 15.3%;
   }
 }
 
