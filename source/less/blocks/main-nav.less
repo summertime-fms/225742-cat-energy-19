@@ -192,11 +192,21 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-left: 7.6%;
     margin-right: 7.6%;
     padding-top: 32px;
     z-index: 2;
+  }
+
+  .main-nav__logo-wrapper {
+    margin: 0;
+    width: 202px;
+  }
+
+  .main-nav__container {
+    margin: 0;
+    margin-top: 21px;
   }
 
   .main-nav__list {

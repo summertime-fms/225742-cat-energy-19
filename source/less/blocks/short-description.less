@@ -94,9 +94,15 @@
     margin-bottom: 113px;
 
     background-image: url("..//img/index-can-desktop@1x.png");
-    background-position: 63% 60%;
+    background-size: auto;
+    background-position: 63% 47%;
     z-index: 3;
     background-color: transparent;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("..//img/index-can-desktop@2x.png");
+      background-size: 38% 90%;
+    }
 
     &::before {
       content: "";
