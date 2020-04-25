@@ -120,10 +120,27 @@
                 <div class="examples-slider">
                   <ul class="examples-slider__slides-wrapper">
                       <li class="examples-slider__slide examples-slider__slide--before">
-                          <img class="slider-image" src="img/before-mobile@1x.png" alt="Борис до того, как узнал о Cat Energy" width="311" height="232">
+                        <picture>
+                          <source type ="image/webp" media="(min-width: 1440px)" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                          <source type ="image/webp" media="(min-width: 768px)" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                          <source type ="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+                          <source media="(min-width: 1440px)" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x">
+                          <img class="slider-image" src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x" alt="Борис до того, как узнал о Cat Energy" >
+                        </picture>
+
                       </li>
                       <li class="examples-slider__slide examples-slider__slide--after">
-                          <img class="slider-image" src="img/after-mobile@1x.png" alt="Борис после того, как узнал о Cat Energy" width="311" height="232">
+                        <picture>
+                          <source type ="image/webp" media="(min-width: 1440px)" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                          <source type ="image/webp" media="(min-width: 768px)" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                          <source type ="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                          <source media="(min-width: 1440px)" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x">
+                          <img class="slider-image" src="img/after-mobile@1x.png 1x" srcset="img/after-mobile@2x.png 2x" alt="Борис после того, как узнал о Cat Energy" >
+                        </picture>
                       </li>
                   </ul>
                   <div class="examples-slider__controllers">
