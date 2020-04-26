@@ -33,11 +33,11 @@
   width: 28px;
   height: 18px;
   background-repeat: no-repeat;
-  background-image: url("/img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-mobile-menu.svg");
   outline: none;
 
   &--close {
-    background-image: url("/img/icon-close.svg");
+    background-image: url("../img/icon-close.svg");
     height: 18px;
     width: 25px;
   }
@@ -133,18 +133,25 @@
     border: none;
   }
 
+  .main-nav__logo-wrapper {
+    width: 172px;
+    height: 60px;
+    margin-left: -18px;
+  }
+
   .main-nav__container {
     width: auto;
-    margin-left: 0;
     margin-top: 24px;
+    padding: 0;
   }
 
   .main-nav__list {
     display: flex;
 
     justify-content: flex-end;
-    flex-grow: 1;
+
     flex-wrap: wrap;
+    width: 73%;
 
     &--close {
       animation: none;
@@ -162,7 +169,7 @@
   }
 
   .main-nav__link {
-    margin-top: 20px;
+    margin-top: 23px;
     font-size: 18px;
     line-height: 1.39;
     color: #222222;
@@ -185,11 +192,21 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-left: 7.6%;
     margin-right: 7.6%;
     padding-top: 32px;
     z-index: 2;
+  }
+
+  .main-nav__logo-wrapper {
+    margin: 0;
+    width: 202px;
+  }
+
+  .main-nav__container {
+    margin: 0;
+    margin-top: 21px;
   }
 
   .main-nav__list {
