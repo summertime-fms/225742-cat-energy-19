@@ -7,6 +7,11 @@
   background-image: url("..//img/index-can-mobile@1x.png"), url("..//img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, @grass 62.24%, transparent 62.24%);
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 76%, 0% 0%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("..//img/index-background-mobile@2x.jpg");
+    background-size: auto 58%, 100% auto;
+  }
 }
 
 
@@ -35,9 +40,31 @@
   padding-bottom: 11px;
 }
 
+@media (min-width: 450px) {
+  .short-description {
+    margin: 0 auto;
+    margin-bottom: 52px;
+    width: auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-size: auto 58%, 100% auto;
+    }
+  }
+
+  .short-description__link {
+    margin-top: 69vw;
+  }
+}
+
 @media (min-width: 487px) {
-  .short-description__title-add {
-    margin-bottom: 340px;
+  .short-description__link {
+    margin-top: 77vw;
+  }
+}
+
+@media (min-width: 515px) {
+  .short-description__link {
+    margin-top: 400px;
   }
 }
 
@@ -52,7 +79,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
-      background-size: 92% 70.4%;
+      background-size: auto 69%;
     }
   }
 
@@ -94,14 +121,14 @@
     margin-bottom: 113px;
 
     background-image: url("..//img/index-can-desktop@1x.png");
-    background-size: auto;
+
     background-position: 63% 47%;
     z-index: 3;
     background-color: transparent;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("..//img/index-can-desktop@2x.png");
-      background-size: 38% 90%;
+      background-size: auto 93%;
     }
 
     &::before {
@@ -112,12 +139,17 @@
       right: 0;
 
       display: block;
-      width: 720px;
+      width: 50%;
       height: 696px;
       background-color: @leaf;
       background-image: url("..//img/index-background-desktop@1x.jpg");
+      background-size: 100% auto;
       background-repeat: no-repeat;
       z-index: -4;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("..//img/index-background-desktop@2x.jpg");
+      }
     }
   }
 
