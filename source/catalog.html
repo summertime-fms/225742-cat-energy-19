@@ -19,7 +19,7 @@
                 <img class="main-nav__logo" src="img/logo-mobile.svg" alt="Cat Energy. Питание для котов" width="191" height="39">
               </picture>
             </a>
-            <button class="main-nav__toggle" type="button"></button>
+            <button class="main-nav__toggle" type="button" aria-label="Показать/Скрыть меню"></button>
           </div>
           <ul class="main-nav__list main-nav__list--close">
             <li class="main-nav__item">
@@ -470,13 +470,25 @@
                 <div class="page-footer__socials socials">
                   <ul class="socials__list">
                     <li class="socials__item">
-                      <a class="socials__link socials__link--vk" title="Вконтакте" aria-label="Вконтакте"></a>
+                      <a class="socials__link socials__link--vk" title="Вконтакте" aria-label="Вконтакте">
+                        <svg class="socials__icon" width="22" height="12">
+                          <use xlink:href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="socials__item">
-                      <a class="socials__link socials__link--inst" title="Инстаграм" aria-label="Инстаграм"> </a>
+                      <a class="socials__link socials__link--inst" title="Инстаграм" aria-label="Инстаграм">
+                        <svg class="socials__icon" width="16.1" height="16">
+                          <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg>
+                      </a>
                     </li>
                       <li class="socials__item">
-                        <a class="socials__link socials__link--fb" title="Фейсбук" aria-label="Фейсбук"></a>
+                        <a class="socials__link socials__link--fb" title="Фейсбук" aria-label="Фейсбук">
+                          <svg class="socials__icon" width="10" height="19">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                          </svg>
+                        </a>
                     </li>
                   </ul>
               </div>
