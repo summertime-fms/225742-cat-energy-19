@@ -8,6 +8,7 @@
         <title>HTML Academy. Проект Cat Energy</title>
     </head>
     <body class="page-body">
+
       <header class="page-header">
         <nav class="main-nav">
           <div class="main-nav__container">
@@ -18,7 +19,7 @@
                 <img class="main-nav__logo" src="img/logo-mobile.svg" alt="Cat Energy. Питание для котов" width="191" height="39">
               </picture>
             </a>
-            <button class="main-nav__toggle" type="button"></button>
+            <button class="main-nav__toggle" type="button" aria-label="Показать/Скрыть меню"></button>
           </div>
           <ul class="main-nav__list main-nav__list--close">
             <li class="main-nav__item">
@@ -114,31 +115,31 @@
                           <small class="stats__property">затрачено времени</small>
                         </div>
                       </div>
-                      <span class="stats__expenses">Затраты на питание: 15 000 руб.</span>
+                      <span class="stats__expenses">Затраты на питание: <span class="stats__expenses-price">15 000 руб.</span></span>
                   </div>
                 </div>
                 <div class="examples-slider">
                   <ul class="examples-slider__slides-wrapper">
                       <li class="examples-slider__slide examples-slider__slide--before">
                         <picture>
-                          <source type ="image/webp" media="(min-width: 1440px)" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-                          <source type ="image/webp" media="(min-width: 768px)" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                          <source type ="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                          <source type ="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                           <source type ="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-                          <source media="(min-width: 1440px)" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x">
-                          <source media="(min-width: 768px)" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x">
+                          <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                           <img class="slider-image" src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x" alt="Борис до того, как узнал о Cat Energy" >
                         </picture>
 
                       </li>
                       <li class="examples-slider__slide examples-slider__slide--after">
                         <picture>
-                          <source type ="image/webp" media="(min-width: 1440px)" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-                          <source type ="image/webp" media="(min-width: 768px)" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                          <source type ="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                          <source type ="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                           <source type ="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-                          <source media="(min-width: 1440px)" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x">
-                          <source media="(min-width: 768px)" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x">
+                          <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                           <img class="slider-image" src="img/after-mobile@1x.png 1x" srcset="img/after-mobile@2x.png 2x" alt="Борис после того, как узнал о Cat Energy" >
                         </picture>
                       </li>
@@ -159,7 +160,7 @@
         <footer class="page-footer">
           <div class="page-footer__contacts contacts">
             <div class="page-footer__contacts-wrapper">
-              <h2 class="title contacts__title">Приглашаем к сотрудничеству <br> дилеров!</h2>
+              <h2 class="title contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
               <address class="contacts__address">
                   ул. Большая Конюшенная, д. 19/8
                   <span class="contacts__address-town">Санкт-Петербург </span>
@@ -174,23 +175,37 @@
                   <div class="page-footer__logo-wrapper">
                       <img class="page-footer__logo" src="img/logo-footer.svg" alt="Cat energy. Питание для вашего кота" width="128" height="24">
                   </div>
-                  <div class="page-footer__socials socials">
+
                     <ul class="socials__list">
                       <li class="socials__item">
-                        <a class="socials__link socials__link--vk" title="Вконтакте" aria-label="Вконтакте"></a>
+                        <a class="socials__link socials__link" title="Вконтакте" aria-label="Вконтакте">
+                          <svg class="socials__icon socials__icon--vk" width="22" height="12">
+                            <use xlink:href="img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="socials__item">
-                        <a class="socials__link socials__link--inst" title="Инстаграм" aria-label="Инстаграм"> </a>
+                        <a class="socials__link socials__link" title="Инстаграм" aria-label="Инстаграм">
+                          <svg class="socials__icon socials__icon--insta" width="16.1" height="16">
+                            <use xlink:href="img/sprite.svg#icon-insta"></use>
+                          </svg>
+                        </a>
                       </li>
                         <li class="socials__item">
-                          <a class="socials__link socials__link--fb" title="Фейсбук" aria-label="Фейсбук"></a>
+                          <a class="socials__link socials__link" title="Фейсбук" aria-label="Фейсбук">
+                            <svg class="socials__icon socials__icon--fb" width="10" height="19">
+                              <use xlink:href="img/sprite.svg#icon-fb"></use>
+                            </svg>
+                          </a>
                       </li>
                     </ul>
-                </div>
+
                 <div class="page-footer__copyright copyright">
                     <span class="copyright__name">HTML Academy</span>
                     <a class="copyright__image-wrapper" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
-                      <img class="copyright__image" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+                      <svg class="copyright__icon" width="43" height="60">
+                        <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+                      </svg>
                     </a>
                 </div>
             </div>
