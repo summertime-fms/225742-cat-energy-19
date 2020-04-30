@@ -56,36 +56,13 @@
   }
 }
 
-@keyframes menu__closing {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  50% {
-    transform: translateY(50px);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: translateY(-300px);
-    opacity: 0;
-    display: none;
-  }
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
 
 
   list-style: none;
-
-  &--close {
-    animation: menu__closing 0.6s;  /* ????? */
-    display: none;
-  }
-
+  display: none;
 
   &--open {
     display: block;
@@ -112,10 +89,14 @@
   font-size: 20px;
   color: #111111;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 500;
 
   &:hover {
-    color: @leaf;
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
   }
 }
 
