@@ -30,6 +30,30 @@
   font-weight: 400;
   padding-top: 5px;
   margin-bottom: 13px;
+
+  & a:focus {
+    outline: none;
+    color: @leaf;
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.product__image-link:focus {
+  outline: none;
+
+  & .product__image-wrapper {
+    animation: up 0.3s;
+    animation-fill-mode: forwards;
+  }
 }
 
 .product__image-wrapper {

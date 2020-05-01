@@ -98,6 +98,11 @@
   &:active {
     color: rgba(17, 17, 17, 0.3);
   }
+
+  &:focus {
+    outline: none;
+    color: #b738a7;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -208,6 +213,10 @@
 
     &--index {
       color: #ffffff;
+
+      &:focus:first-of-type::after {
+        background-color: #b738a7;
+      }
 
       &:first-of-type::after {
         background-color: #ffffff;

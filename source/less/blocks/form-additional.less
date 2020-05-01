@@ -15,9 +15,16 @@
   }
 }
 
-.form-additional__checkbox:checked + label::after {
-  display: block;
+.form-additional__checkbox {
+  &:checked + label::after {
+    display: block;
+  }
+
+  &:focus + label::before {
+    border-color: #444444;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .form-additional {
