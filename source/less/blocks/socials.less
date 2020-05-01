@@ -14,7 +14,7 @@
 
 .socials__item {
   &:not(:last-of-type) {
-    margin-right: 16px;
+    margin-right: 25px;
   }
 }
 
@@ -31,6 +31,11 @@
   &:hover .socials__icon {
     fill: @leaf;
   }
+
+  &:active .socials__icon {
+    fill: @leaf;
+    opacity: 0.6;
+  }
 }
 
 .socials__icon {
@@ -45,6 +50,12 @@
   .socials__list {
     padding: 0;
     border: none;
+  }
+
+  .socials__item {
+    &:not(:last-of-type) {
+      margin-right: 0;
+    }
   }
 
   .socials__link {

@@ -1,5 +1,6 @@
 .examples-slider__slides-wrapper {
   margin: 0;
+  margin-bottom: 59px;
   padding: 0;
 
   list-style: none;
@@ -19,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
   width: 200px;
-  margin: 0 auto;
+  margin-left: 43px;
   padding-bottom: 38px;
 }
 
@@ -29,6 +30,7 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
 
 .examples-slider__toggler {
   width: 84px;
@@ -45,7 +47,7 @@
 .examples-slider__toggler-range {
   width: 35px;
   height: 6px;
-  margin-top: 3.5px;
+  margin-top: 2.5px;
   margin-left: 6px;
   border-radius: 3px;
   background-color: @leaf;
@@ -58,10 +60,11 @@
     padding-left: 98px;
     padding-right: 99px;
     background-color: #eaeaea;
-    padding-top: 367px;
+    padding-top: 368px;
     padding-bottom: 68px;
-    margin-top: -354px;
+    margin-top: -409px;
   }
+
 
   .examples-slider__toggler {
     position: relative;
@@ -98,6 +101,16 @@
     overflow: hidden;
     border: 1px solid #cdcdcd;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+
+      & .examples-slider__controller-title {
+        border-bottom-color: rgba(0, 0, 0, 0.4);
+        border-bottom-style: solid;
+      }
+    }
   }
 
   .examples-slider__controller-title {
@@ -130,5 +143,6 @@
     background: none;
     padding-left: 59px;
     padding-right: 47px;
+    margin-top: -367px;
   }
 }

@@ -54,6 +54,10 @@
       cursor: pointer;
     }
 
+    &:hover::before {
+      border-color: #bababa;
+    }
+
     &::after {
       content: "";
       display: none;
@@ -89,6 +93,11 @@
       cursor: pointer;
     }
 
+    &:hover::before {
+      border-color: #bababa;
+    }
+
+
     &::after {
       content: "";
 
@@ -121,7 +130,14 @@
   font-size: 20px;
   text-transform: uppercase;
 
+  &:hover {
+    border: solid 1px #cdcdcd;
+  }
+
   &:focus {
+    outline: none;
+    border: solid 2px #444444;
+
     &::-webkit-input-placeholder {
       color: transparent;
     }
@@ -137,6 +153,30 @@
     &:-ms-input-placeholder {
       color: transparent;
     }
+  }
+
+  &:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid #ff8282;
+  }
+
+  &:valid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid @leaf;
+  }
+
+  &--email:invalid:not(:focus):not(:placeholder-shown) + .owner-data__icon-wrapper svg {
+    fill: #ff8282;
+  }
+
+  &--email:valid:not(:focus):not(:placeholder-shown) + .owner-data__icon-wrapper svg {
+    fill: @leaf;
+  }
+
+  &--phone:invalid:not(:focus):not(:placeholder-shown) + .owner-data__icon-wrapper svg {
+    fill: #ff8282;
+  }
+
+  &--phone:valid:not(:focus):not(:placeholder-shown) + .owner-data__icon-wrapper svg {
+    fill: @leaf;
   }
 }
 
@@ -182,6 +222,7 @@
   height: 40px;
   margin-bottom: 22px;
   padding-bottom: 10px;
+  margin-top: 33px;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -203,7 +244,7 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .form__input {
@@ -229,7 +270,7 @@
   .form__label {
     font-size: 20px;
     line-height: 1;
-    margin-right: 17px;
+    margin-right: 21px;
 
     &--program-choose {
       &::before {
@@ -242,7 +283,7 @@
         width: 16px;
         height: 16px;
         top: 9px;
-        left: 11.5px;
+        left: 11px;
       }
     }
 
@@ -288,14 +329,14 @@
     margin: 0;
     display: inline-block;
     font-size: 20px;
-    margin-left: 9.2%;
+    margin-left: 9%;
   }
 
   .form__required-details {
-    margin-left: 57px;
+    margin-left: 60px;
     display: inline-block;
     padding-top: 0.5%;
-
+    vertical-align: super;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -306,11 +347,12 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    margin-bottom: 54px;
+    margin-bottom: 68px;
   }
 
   .form__button {
-    margin-left: 10.2%;
+    margin-left: 7.8%;
+    width: 39.4%;
   }
 
   .form__required-details {
