@@ -129,8 +129,9 @@
   }
 
   &:focus {
-    outline: none;
-    color: @leaf;
+    &::after {
+      background-image: url("..//img/icon-right-arrow-verylong.svg");
+    }
   }
 
   &::after {
@@ -165,6 +166,7 @@
     padding: 0;
     padding-left: 7.08%;
     padding-right: 8.5%;
+    padding-bottom: 62px;
 
     &:first-of-type {
       margin-bottom: 30px;
@@ -209,7 +211,7 @@
     font-size: 20px;
     line-height: 1;
     display: block;
-    padding-bottom: 62px;
+
 
     &::after {
       margin-left: 32px;
@@ -236,7 +238,7 @@
     width: 46.6%;
     margin: 0;
     height: auto;
-    padding: 46px 56px 0 53px;
+    padding: 46px 56px 62px 53px;
 
     &:nth-child(2n) {
       margin-left: 80px;

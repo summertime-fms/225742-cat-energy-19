@@ -14,11 +14,12 @@
   margin: 0;
   margin-bottom: 34px;
   padding-left: 5.9%;
+  width: 100%;
 
   font-size: 24px;
   line-height: 1;
   color: #111111;
-  width: 100%;
+
   display: flex;
 }
 
@@ -56,6 +57,18 @@
 
     &:hover::before {
       border-color: #bababa;
+    }
+
+    &:active {
+      color: rgba(34, 34, 34, 0.3);
+
+      &::before {
+        opacity: 0.3;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
     }
 
     &::after {
@@ -97,6 +110,18 @@
       border-color: #bababa;
     }
 
+    &:active {
+      color: rgba(34, 34, 34, 0.3);
+
+      &::before {
+        opacity: 0.3;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+
 
     &::after {
       content: "";
@@ -117,11 +142,12 @@
 .form__input {
   width: 100%;
   height: 45px;
-
-  flex-grow: 2;
   padding: 0;
+  flex-grow: 2;
+
   padding-left: 13px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   border: 1px solid #cdcdcd;
   border-color: rgba(#cdcdcd, 50%);
 
@@ -135,18 +161,13 @@
   }
 
   &:focus {
-    outline: none;
-    border: solid 2px #444444;
+    outline: solid 2px #444444;
 
     &::-webkit-input-placeholder {
       color: transparent;
     }
 
-    &::-moz-input-placeholder {
-      color: transparent;
-    }
-
-    &:-moz-input-placeholder {
+    &::-moz-placeholder {
       color: transparent;
     }
 
@@ -304,7 +325,7 @@
       }
 
       &::after {
-        top: 10px;
+        top: 8px;
         left: 10px;
       }
     }

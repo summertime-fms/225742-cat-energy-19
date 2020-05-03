@@ -1,4 +1,4 @@
-.socials__list {
+.socials {
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -37,9 +37,12 @@
     opacity: 0.6;
   }
 
-  &:focus .socials__icon {
+  &:focus {
     outline: none;
-    fill: @leaf;
+
+    & .socials__icon {
+      fill: @leaf;
+    }
   }
 }
 
@@ -52,7 +55,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .socials__list {
+  .socials {
     padding: 0;
     border: none;
   }
