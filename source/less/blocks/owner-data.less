@@ -1,21 +1,19 @@
 
-.owner-data__wrapper {
-  margin-left: 6%;
-  margin-right: 6%;
-}
 
 .owner-data__input {
   padding-right: 46px;
   margin-left: -3px;
 }
 
-.owner-data__item {
-  position: relative;
-}
-
 .owner-data__icon-wrapper {
   position: absolute;
-  right: 20px;
+  right: 17px;
+  top: 14px;
+}
+
+.owner-data__fields {
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,11 +31,17 @@
   }
 
   .owner-data__icon-wrapper {
-    right: 16px;
+    right: 23px;
+    top: 19px;
   }
 
   .owner-data__title-hide {
     display: none;
+  }
+
+  .owner-data__fields {
+    padding-left: 70px;
+    padding-right: 63px;
   }
 }
 
@@ -52,6 +56,14 @@
     display: flex;
     align-items: baseline;
     width: 84.4%;
+  }
+
+  .owner-data__fields {
+    padding-left: 110px;
+    padding-right: 107px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
   }
 
   .owner-data__item {

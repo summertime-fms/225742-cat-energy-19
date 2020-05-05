@@ -3,6 +3,10 @@
   margin-bottom: 33px;
 }
 
+.features__wrapping-hide {
+  display: none;
+}
+
 .features__title {
   margin: 0;
   margin-left: 6.25%;
@@ -36,49 +40,44 @@
     margin-right: 20px;
 
     background-color: @leaf;
-  }
-
-  &--natural::before {
-    background-image: url("../img/advantage-leaf@1x.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("..//img/advantage-leaf@2x.png");
       background-size: 80% auto;
+    }
+  }
+
+  &--natural::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("..//img/advantage-leaf@2x.png");
     }
   }
 
   &--easy::before {
     background-image: url("../img/advantage-powder@1x.png");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("..//img/advantage-powder@2x.png");
-      background-size: 80% auto;
     }
   }
 
   &--comfort::before {
     background-image: url("../img/advantage-dining@1x.png");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("..//img/advantage-dining@2x.png");
-      background-size: 80% auto;
     }
   }
 
   &--fast::before {
     background-image: url("../img/advantage-clock@1x.png");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("..//img/advantage-clock@2x.png");
-      background-size: 80% auto;
     }
   }
 }
@@ -100,6 +99,10 @@
       height: 1px;
       background-color: #f2f2f2;
     }
+  }
+
+  .features__wrapping-hide {
+    display: block;
   }
 
   .features__list {
@@ -134,6 +137,10 @@
       height: 80px;
       margin-bottom: 32px;
       background-repeat: no-repeat;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-size: 60% auto;
+      }
     }
 
     &::after {

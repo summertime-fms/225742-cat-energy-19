@@ -5,14 +5,14 @@
 
 .form__fieldset {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
   padding: 0;
   border: none;
 }
 
 .form__legend {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
   padding-left: 5.9%;
   width: 100%;
 
@@ -143,11 +143,10 @@
   width: 100%;
   height: 45px;
   padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   flex-grow: 2;
-
-  padding-left: 13px;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-left: 14px;
   border: 1px solid #cdcdcd;
   border-color: rgba(#cdcdcd, 50%);
 
@@ -204,7 +203,7 @@
 ::-webkit-input-placeholder {
 
   font-size: 16px;
-  line-height: 1.13;
+  line-height: 1;
   color: rgba(#444444, 100%);
   font-family: "Oswald", "Helvetica", sans-serif;
   text-transform: uppercase;
@@ -212,7 +211,7 @@
 
 ::-moz-placeholder {
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.13;
   color: rgba(#444444, 100%);
   font-family: "Oswald", "Helvetica", sans-serif;
   text-transform: uppercase;
@@ -220,7 +219,7 @@
 
 :-ms-input-placeholder {
   font-size: 16px;
-  line-height: 1.13;
+  line-height: 1;
   color: rgba(#444444, 100%);
   font-family: "Oswald", "Helvetica", sans-serif;
   text-transform: uppercase;
@@ -228,6 +227,7 @@
 
 
 .form__item {
+  width: 100%;
   margin: 0;
   display: flex;
   align-items: center;
@@ -235,6 +235,15 @@
   &:not(:last-of-type) {
     margin-bottom: 12px;
   }
+}
+
+.form__fields {
+  width: 100%;
+}
+
+.form__field-item {
+  width: 100%;
+  position: relative;
 }
 
 
@@ -296,7 +305,7 @@
   .form__label {
     font-size: 20px;
     line-height: 1;
-    margin-right: 21px;
+    margin-right: 16px;
 
     &--program-choose {
       &::before {

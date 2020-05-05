@@ -1,26 +1,9 @@
-.showmore {
-  position: relative;
-  flex-direction: column;
-  min-height: 210px;
-  border-bottom: 1px solid #ededed;
 
-
-  &::before {
-    content: "";
-
-    width: 31px;
-    height: 31px;
-    margin: 26px auto;
-    margin-bottom: 19.8px;
-    background-image: url("..//img/icon-plus-mobile.svg");
-    opacity: 0.2;
-  }
-}
 
 .showmore__title {
   width: 73%;
   margin: 0 auto;
-
+  font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
@@ -64,21 +47,16 @@
   .showmore {
     background-color: #ffffff;
     flex-grow: 1;
-    box-shadow: 1px 1px 0 #cdcdcd inset,
-      -1px -1px 0 #cdcdcd inset;
+    border: none;
 
     &::before {
-      background-image: url("..//img/icon-plus.svg");
-      margin: 55px auto;
-      margin-bottom: 49px;
-      width: 61px;
-      height: 61px;
+      display: none;
     }
   }
 
   .showmore__title {
     font-size: 20px;
-    width: 42%;
+    width: 46%;
     text-transform: uppercase;
     margin-bottom: 25px;
     line-height: 1;
@@ -91,8 +69,8 @@
   .showmore__text {
     margin: 0;
     font-size: 16px;
-    width: 52%;
-    margin-bottom: 90px;
+    width: 56%;
+    margin-bottom: 84px;
     line-height: 1.2;
   }
 }

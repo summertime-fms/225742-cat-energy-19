@@ -5,113 +5,113 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <link rel="stylesheet" href="css/style.css">
       <script src="js/picturefill.js" async=""></script>
-
       <title>HTML Academy. Проект Cat Energy</title>
     </head>
     <body class="page-body">
       <header class="page-header">
         <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <div class="main-nav__container">
-            <a class="main-nav__logo-wrapper" href="index.html">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img class="main-nav__logo" src="img/logo-mobile.svg" alt="Cat Energy. Питание для котов" width="191" height="39">
-              </picture>
-            </a>
-            <button class="main-nav__toggle" type="button" aria-label="Показать/Скрыть меню"></button>
-          </div>
-          <ul class="main-nav__list main-nav__list--close">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link  main-nav__link--active" href="">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="main-nav">
+            <div class="main-nav__container">
+              <a class="main-nav__logo-wrapper" href="index.html">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="main-nav__logo" src="img/logo-mobile.svg" alt="Cat Energy. Питание для котов" width="191" height="39">
+                </picture>
+              </a>
+              <button class="main-nav__toggle" type="button" aria-label="Показать/Скрыть меню"></button>
+            </div>
+            <ul class="main-nav__list main-nav__list--close">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link  main-nav__link--active" href="">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
-        <main>
-            <h1 class="title form-title">Подбор программы</h1>
-            <p class="form-title__details">
-                Заполните анкету и мы подберем программу питания для вашего кота
-            </p>
-            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-                <fieldset class="form__fieldset cat-data">
-                    <legend class="visually-hidden form__legend">Данные кота</legend>
-                    <ul>
-<li>
-                        <p class="form__item">
-                            <label class="form__label" for="cat-name"> Имя:*</label>
-                                <input class="form__input form-input--name" type="text" name="cat-name" id="cat-name" value="" placeholder="Барсик" required="">
-                        </p>
-</li>
-<li>
-                        <p class="form__item">
-                            <label class="form__label" for="cat-weight"> Вес (кг):*</label>
-                                <input class="form__input form-input--weight" type="number" name="cat-weight" min="1" max="20" step="1" id="cat-weight" value="" placeholder="7" required="">
-                        </p>
-</li>
-<li>
-                        <p class="form__item">
-                            <label class="form__label" for="cat-age"> Возраст (лет):</label>
-                                <input class="form__input" type="number" name="cat-age" min="1" max="20" step="1" id="cat-age" value="" placeholder="7">
-                        </p>
-                        </li>
-                        </ul>
+      <main>
+        <h1 class="title form-title">Подбор программы</h1>
+        <p class="form-title__details">
+          Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="form__fieldset cat-data">
+            <legend class="visually-hidden form__legend">Данные кота</legend>
+              <div class="form__fields">
+                <div class="form__item">
+                  <label class="form__label" for="cat-name"> Имя:*</label>
+                  <div class="form__field-item">
+                    <input class="form__input form-input--name" type="text" name="cat-name" id="cat-name" value="" placeholder="Барсик" required="">
+                  </div>
+                </div>
+                <div class="form__item">
+                  <label class="form__label" for="cat-weight"> Вес (кг):*</label>
+                  <div class="form__field-item">
+                    <input class="form__input form-input--weight" type="number" name="cat-weight" min="1" max="20" step="1" id="cat-weight" value="" placeholder="7" required="">
+                  </div>
+                </div>
+                <div class="form__item">
+                  <label class="form__label" for="cat-age"> Возраст (лет):</label>
+                  <div class="form__field-item">
+                    <input class="form__input" type="number" name="cat-age" min="1" max="20" step="1" id="cat-age" value="" placeholder="7">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset program-choose">
+              <legend class="visually-hidden form__legend">Выберите подходящую программу</legend>
+              <ul class="program-choose__list">
+                <li class="program-choose__list-item">
+                  <input class="visually-hidden program-choose__radio" type="radio" name="program" value="slim" id="programm-choose__item--first" checked="" onclick="this.blur();">
+                  <label class="form__label form__label--program-choose" for="programm-choose__item--first">Похудение</label>
+                </li>
+                <li class="program-choose__list-item">
+                  <input class="visually-hidden program-choose__radio" type="radio" name="program" value="mass-gain" id="programm-choose__item--second" onclick="this.blur();">
+                  <label class="form__label form__label--program-choose" for="programm-choose__item--second">Набор массы</label>
+                </li>
+                <li class="program-choose__list-item">
+                  <input class="visually-hidden program-choose__radio" type="radio" name="program" value="needs-advice" id="programm-choose__item--third" onclick="this.blur();">
+                  <label class="form__label form__label--program-choose" for="programm-choose__item--third">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset owner-data">
+              <legend class="form__legend">
+                <div class="title--green-line">
+                  Контактные данные<br class="owner-data__title-hide"> (владельца кота)
+                </div>
+              </legend>
+              <div class="form__fields owner-data__fields">
+                <div class="form__item owner-data__item">
+                  <label class="form__label" for="owner-email">E-mail:*</label>
+                  <div class="form__field-item">
+                    <input class="form__input form__input--email owner-data__input" type="email" name="email" id="owner-email" value="" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="kuklachev@gmail.com" required="">
+                    <span class="owner-data__icon-wrapper">
+                      <svg class="owner-data__icon owner-data__icon--mail" width="17" height="13">
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                      </svg>
+                    </span>
+                  </div>
 
-                </fieldset>
-                <fieldset class="form__fieldset program-choose">
-                    <legend class="visually-hidden form__legend">
-                        Выберите подходящую программу
-                    </legend>
-                    <ul class="program-choose__list">
-                        <li class="program-choose__list-item">
-                            <input class="visually-hidden program-choose__radio" type="radio" name="program" value="slim" id="programm-choose__item--first" checked="" onclick="this.blur();">
-                            <label class="form__label form__label--program-choose" for="programm-choose__item--first">Похудение</label>
-                        </li>
-                        <li class="program-choose__list-item">
-                            <input class="visually-hidden program-choose__radio" type="radio" name="program" value="mass-gain" id="programm-choose__item--second" onclick="this.blur();">
-                            <label class="form__label form__label--program-choose" for="programm-choose__item--second">Набор массы</label>
-                        </li>
-                        <li class="program-choose__list-item">
-                            <input class="visually-hidden program-choose__radio" type="radio" name="program" value="needs-advice" id="programm-choose__item--third" onclick="this.blur();">
-                            <label class="form__label form__label--program-choose" for="programm-choose__item--third">Не знаю (Нужен ваш совет)</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset class="form__fieldset owner-data">
-                    <legend class="form__legend">
-                      <div class="title--green-line">
-                      Контактные данные<br class="owner-data__title-hide"> (владельца кота)
+                </div>
+                <div class="form__item owner-data__item">
+                  <label class="form__label" for="owner-phone">Телефон:*</label>
+                    <div class="form__field-item">
+                      <input class="form__input form__input--phone owner-data__input" type="tel" name="tel" id="owner-phone" minlength="17" maxlength="17" value="" pattern="8" placeholder="8 (960) 900-60-90" required="">
+                      <span class="owner-data__icon-wrapper">
+                        <svg class="owner-data__icon owner-data__icon--phone" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                      </span>
                     </div>
-                    </legend>
-                    <div class="owner-data__wrapper">
-                        <p class="form__item owner-data__item ">
-                            <label class="form__label" for="owner-email">E-mail:*</label>
-                            <input class="form__input form__input--email owner-data__input" type="email" name="email" id="owner-email" value="" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="kuklachev@gmail.com" required="">
-                            <span class="owner-data__icon-wrapper">
-                              <svg class="owner-data__icon owner-data__icon--mail" width="17" height="13">
-                                <use xlink:href="img/sprite.svg#icon-mail"></use>
-                              </svg>
-                            </span>
-                        </p>
-                        <p class="form__item owner-data__item">
-                            <label class="form__label" for="owner-phone">Телефон:*</label>
-                            <input class="form__input form__input--phone owner-data__input" type="tel" name="tel" id="owner-phone" minlength="17" maxlength="17" value="" pattern="8" placeholder="8 (960) 900-60-90" required="">
-                            <span class="owner-data__icon-wrapper">
-                              <svg class="owner-data__icon owner-data__icon--phone" width="20" height="20">
-                                <use xlink:href="img/sprite.svg#icon-phone"></use>
-                              </svg>
-                            </span>
 
-                        </p>
-                    </div>
+                  </div>
                 </fieldset>
                 <fieldset class="form__fieldset comment">
                     <legend class="form__legend comment__title">
