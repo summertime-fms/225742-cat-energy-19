@@ -3,6 +3,7 @@
 .showmore__title {
   width: 73%;
   margin: 0 auto;
+
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
@@ -11,10 +12,11 @@
 }
 
 .showmore__text {
-  font-size: 12px;
-  line-height: 16px;
   margin-top: 6px;
   margin-bottom: 26px;
+
+  font-size: 12px;
+  line-height: 16px;
   font-family: @content-font;
   text-align: center;
   color: #444444;
@@ -23,6 +25,7 @@
 .showmore__button {
   min-height: 30px;
   padding-bottom: 8px;
+
   font-size: 16px;
   line-height: 20px;
   color: #444444;
@@ -45,9 +48,11 @@
 
 @media (min-width: @tablet-width) {
   .showmore {
-    background-color: #ffffff;
     flex-grow: 1;
+
     border: none;
+
+    background-color: #ffffff;
 
     &::before {
       display: none;
@@ -55,11 +60,12 @@
   }
 
   .showmore__title {
-    font-size: 20px;
     width: 46%;
-    text-transform: uppercase;
     margin-bottom: 25px;
+
+    font-size: 20px;
     line-height: 1;
+    text-transform: uppercase;
   }
 
   .showmore__button {
@@ -67,10 +73,11 @@
   }
 
   .showmore__text {
-    margin: 0;
-    font-size: 16px;
     width: 56%;
+    margin: 0;
     margin-bottom: 84px;
+
+    font-size: 16px;
     line-height: 1.2;
   }
 }
@@ -83,12 +90,12 @@
 
 @media (min-width: @desktop-width) {
   .showmore {
-
-    margin: 0;
-    background-color: #ffffff;
-    border: 1px solid #eaeaea;
     flex-grow: 0;
     width: 245px;
+    margin: 0;
+    border: 1px solid #eaeaea;
+
+    background-color: #ffffff;
     box-shadow: none;
 
     &::before {
@@ -99,18 +106,19 @@
 
   .showmore__title {
     width: 66%;
+
     line-height: 1;
   }
 
   .showmore__text {
-    margin: 0;
     width: 81%;
+    margin: 0;
     margin-bottom: 87px;
   }
 
   .showmore__button {
     margin-bottom: 38px;
-    padding-left: 38px;
     padding-right: 37px;
+    padding-left: 38px;
   }
 }
