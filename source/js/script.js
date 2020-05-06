@@ -11,10 +11,14 @@ button.addEventListener("click", function() {
 });
 
 function initMap() {
-  let coordinates = {lat: 47.212325, lng: 38.933663},
+  let coordinates = {lat: 59.938721, lng: 30.322999};
 
-    map = new google.maps.Map(document.getElementById('map'), {
+  let map = new google.maps.Map(document.getElementById('map'), {
           center: coordinates,
           scrollwheel: false
       });
+      console.log(map);
 }
+
+initMap();
+
