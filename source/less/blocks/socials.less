@@ -1,14 +1,15 @@
-.socials__list {
-  max-width: 100%;
+.socials {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-top: 17px;
   padding-bottom: 15px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
   list-style: none;
 }
 
@@ -36,6 +37,14 @@
     fill: @leaf;
     opacity: 0.6;
   }
+
+  &:focus {
+    outline: none;
+
+    & .socials__icon {
+      fill: @leaf;
+    }
+  }
 }
 
 .socials__icon {
@@ -47,7 +56,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .socials__list {
+  .socials {
+    width: 45%;
     padding: 0;
     border: none;
   }

@@ -1,11 +1,12 @@
 .programs {
   min-width: 320px;
+  margin-top: 12px;
   margin-bottom: 29px;
 }
 
 .programs__list {
-  margin: 0;
   min-width: 280px;
+  margin: 0;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -25,10 +26,10 @@
 .programs__icon {
   position: relative;
   float: left;
-  margin-left: 3px;
 
   width: 50px;
   height: 50px;
+  margin-left: 3px;
 
   border-radius: 50%;
   background-color: @leaf;
@@ -40,6 +41,7 @@
   position: absolute;
   left: calc(50% - $width / 2);
   top: -6%;
+
   display: block;
   width: 70%;
   height: 98%;
@@ -79,10 +81,11 @@
 
 .programs__description {
   position: relative;
+
   margin: 0;
-  padding-top: 29px;
   margin-left: 1px;
   margin-bottom: 40px;
+  padding-top: 29px;
 
   line-height: 18px;
   font-family: @content-font;
@@ -106,6 +109,7 @@
 
 .programs__link {
   position: relative;
+
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -113,9 +117,9 @@
 
   &:hover {
     &::after {
+      width: 35px;
       background-image: url("..//img/icon-right-arrow-verylong.svg");
       background-position: 0 0;
-      width: 35px;
     }
   }
 
@@ -127,14 +131,22 @@
     }
   }
 
+  &:focus {
+    &::after {
+      background-image: url("..//img/icon-right-arrow-verylong.svg");
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
+    top: 8px;
+    left: 98px;
+
     display: block;
     width: 25px;
     height: 12px;
-    top: 8px;
-    left: 98px;
+
 
     background-image: url("..//img/icon-right-arrow-long.svg");
     background-position: 10% 10%;
@@ -143,21 +155,23 @@
 
 @media (min-width: @tablet-width) {
   .programs {
-    padding-left: 4%;
+    margin: 0;
+    margin-bottom: 46px;
     padding-right: 4%;
-    margin-bottom: 44px;
+    padding-left: 4%;
   }
 
   .programs__list {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .programs__item {
     height: auto;
     padding: 0;
-    padding-left: 7.08%;
     padding-right: 8.5%;
+    padding-bottom: 62px;
+    padding-left: 7.08%;
 
     &:first-of-type {
       margin-bottom: 30px;
@@ -166,6 +180,7 @@
 
   .programs__icon {
     float: right;
+
     width: 200px;
     height: 200px;
     margin-top: 92px;
@@ -173,21 +188,21 @@
 
   .programs__title {
     margin: 0;
+    padding-top: 75px;
+
     font-size: 36px;
     line-height: 1.03;
-
-    padding-top: 75px;
   }
 
   .programs__description {
+    width: 64%;
+    height: auto;
+    margin-right: 20px;
     margin-bottom: 55px;
     padding-top: 25px;
+
     font-size: 16px;
     line-height: 1.5;
-    height: auto;
-    width: 64%;
-    margin-right: 20px;
-
 
     &::after {
       display: none;
@@ -199,25 +214,24 @@
   }
 
   .programs__link {
+    display: block;
+
     font-size: 20px;
     line-height: 1;
-    display: block;
-    padding-bottom: 62px;
 
     &::after {
-      margin-left: 32px;
       top: 4px;
+      margin-left: 32px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .programs {
-
-    margin-left: 7.6%;
     margin-right: 7.6%;
-    padding: 0;
     margin-bottom: 72px;
+    margin-left: 7.6%;
+    padding: 0;
   }
 
   .programs__list {
@@ -227,9 +241,9 @@
 
   .programs__item {
     width: 46.6%;
-    margin: 0;
     height: auto;
-    padding: 46px 56px 0 53px;
+    margin: 0;
+    padding: 46px 56px 62px 53px;
 
     &:nth-child(2n) {
       margin-left: 80px;
@@ -261,7 +275,7 @@
 
   .programs__link {
     &::after {
-      margin-left: 26px;
+      margin-left: 34px;
     }
   }
 }

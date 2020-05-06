@@ -1,13 +1,12 @@
 .examples-slider__slides-wrapper {
   margin: 0;
-  margin-bottom: 59px;
+  margin-bottom: 25px;
   padding: 0;
 
   list-style: none;
 }
 
 .examples-slider__slide {
-  margin-bottom: 35px;
   width: 100%;
 
   &--after {
@@ -19,8 +18,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
-  margin-left: 43px;
+  width: 62%;
+  margin-left: 63px;
   padding-bottom: 38px;
 }
 
@@ -29,11 +28,13 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  user-select: none;
 }
 
 
 .examples-slider__toggler {
-  width: 84px;
+  width: 43%;
   height: 14px;
   border: 1px solid #cdcdcd;
 
@@ -47,7 +48,7 @@
 .examples-slider__toggler-range {
   width: 35px;
   height: 6px;
-  margin-top: 2.5px;
+  margin-top: 3px;
   margin-left: 6px;
   border-radius: 3px;
   background-color: @leaf;
@@ -55,84 +56,114 @@
 
 @media (min-width: @tablet-width) {
   .examples-slider__controllers {
-    margin: 0;
     width: 100%;
-    padding-left: 98px;
+    margin: 0;
+    margin-top: -377px;
+    padding-top: 369px;
     padding-right: 99px;
-    background-color: #eaeaea;
-    padding-top: 368px;
     padding-bottom: 68px;
-    margin-top: -409px;
-  }
+    padding-left: 98px;
 
+    background-color: #f2f2f2;
+  }
 
   .examples-slider__toggler {
     position: relative;
-    margin-left: 24px;
+
+    width: 100%;
+    height: 6px;
     margin-right: 24px;
     margin-bottom: 6px;
-    width: 100%;
+    margin-left: 24px;
+
     border: none;
     border-radius: 2.5px;
     background-color: #dcdcdc;
-    height: 6px;
   }
 
 
   .examples-slider__toggler-range-item {
+    box-sizing: content-box;
+
     display: block;
-    margin-left: calc(50% - 4px);
-    margin-top: calc(50% - 4px);
     width: 8px;
     height: 8px;
+    margin-top: calc(50% - 4px);
+    margin-left: calc(50% - 4px);
+
     border-radius: 50%;
     background-color: @leaf;
-    box-sizing: content-box;
   }
 
   .examples-slider__toggler-range {
+    margin: 0;
     position: absolute;
-    top: -18px;
-    left: 45%;
-    background-color: #ffffff;
-    border-radius: 50%;
+    top: calc(50% - $height / 2);
+    left: calc(50% - $width / 2);
+
     width: 34px;
     height: 34px;
-    overflow: hidden;
     border: 1px solid #cdcdcd;
+
+    background-color: #ffffff;
+    border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    overflow: hidden;
     cursor: pointer;
 
     &:hover {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
 
-      & .examples-slider__controller-title {
-        border-bottom-color: rgba(0, 0, 0, 0.4);
-        border-bottom-style: solid;
-      }
+    &:active {
+      border: 2px solid @leaf;
     }
   }
 
   .examples-slider__controller-title {
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #cdcdcd;
+
     font-size: 20px;
     line-height: 1;
-    border-bottom: 1px dotted #cdcdcd;
-    padding-bottom: 6px;
+
+    &:hover {
+      border-bottom: 1px solid #000000;
+      border-bottom-color: rgba(#000000, 40%);
+    }
+
+    &:active {
+      border-bottom-color: transparent;
+    }
   }
 
   .examples-slider__slide {
-    width: 91%;
+    width: 89.5%;
     margin: 0 auto;
+
+    &--before {
+      margin-top: -8px;
+      margin-left: 47px;
+      clip-path: inset(0 51% 0 0);
+    }
+
+    &--after {
+      display: block;
+      margin-top: -67.6%;
+      margin-left: 47px;
+
+      clip-path: inset(0 0 0 49%);
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .examples-slider {
-    width: 44%;
+    width: 48%;
 
     margin-top: -8.5%;
-    margin-right: 3%;
-    margin-left: 8%;
+    margin-left: 9%;
   }
 
   .examples-slider__slides-wrapper {
@@ -140,9 +171,37 @@
   }
 
   .examples-slider__controllers {
+    margin-top: -361px;
+    padding-right: 67px;
+    padding-left: 54px;
+
     background: none;
-    padding-left: 59px;
-    padding-right: 47px;
-    margin-top: -367px;
+  }
+
+  .examples-slider__slide {
+    width: 100%;
+
+    &--before {
+      margin-top: -68px;
+      margin-left: -27px;
+
+      clip-path: inset(0 46.8% 0 0);
+    }
+
+    &--after {
+      display: none;
+    }
+  }
+
+  @supports (clip-path: inset(0 46.8% 0 0)) {
+    .examples-slider__slide {
+      &--after {
+        display: block;
+        margin-top: -75.5%;
+        margin-left: -26px;
+
+        clip-path: inset(0 0 0 52.9%);
+      }
+    }
   }
 }

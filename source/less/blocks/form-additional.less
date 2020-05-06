@@ -15,9 +15,16 @@
   }
 }
 
-.form-additional__checkbox:checked + label::after {
-  display: block;
+.form-additional__checkbox {
+  &:checked + label::after {
+    display: block;
+  }
+
+  &:focus + label::before {
+    border-color: #444444;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .form-additional {
@@ -30,12 +37,13 @@
 
   .form-additional__list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 115px;
     align-content: space-between;
-    padding-left: 9.06%;
+    flex-wrap: wrap;
+
     width: 82.4%;
+    min-height: 115px;
+    padding-left: 9.06%;
   }
 
   .form-additional__item {
@@ -62,9 +70,9 @@
   }
 
   .form-additional__list {
-    padding: 0;
-    margin: 0 auto;
     min-width: 1220px;
     min-height: 100px;
+    margin: 0 auto;
+    padding: 0;
   }
 }

@@ -1,9 +1,10 @@
 .title {
+  margin-right: 0;
+
   font-size: 36px;
   line-height: 1;
   color: #111111;
   font-weight: 400;
-  margin-right: 0;
 
 
   &--green-line {
@@ -11,10 +12,12 @@
     width: 100%;
 
     &::after {
+
       content: "";
-      margin-left: 6.5%;
-      height: 0.59em;
       flex-grow: 1;
+
+      height: 0.59em;
+      margin-left: 6.5%;
       border-bottom: 3px solid @leaf;
     }
   }
@@ -25,9 +28,9 @@
     &--green-line {
       &::before {
         content: "";
-        margin-right: 5%;
-        height: 0.59em;
         width: 4%;
+        height: 0.59em;
+        margin-right: 5%;
         border-bottom: 3px solid @leaf;
       }
     }
@@ -41,9 +44,11 @@
     line-height: 1;
 
     &--green-line {
+      font-size: 36px;
+
       &::before {
-        margin-right: 2.6%;
         width: 5%;
+        margin-right: 2.6%;
       }
 
       &::after {

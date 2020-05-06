@@ -3,10 +3,9 @@
 }
 
 .main-nav__logo-wrapper {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   width: 191px;
-
 
   &:hover {
     opacity: 0.8;
@@ -25,21 +24,25 @@
 }
 
 .main-nav__toggle {
-  border: none;
-  background: none;
   position: absolute;
   top: 24px;
   right: 16px;
+
   width: 28px;
   height: 18px;
+  border: none;
+
+  background: none;
   background-repeat: no-repeat;
   background-image: url("../img/icon-mobile-menu.svg");
+
   outline: none;
 
   &--close {
-    background-image: url("../img/icon-close.svg");
-    height: 18px;
     width: 25px;
+    height: 18px;
+
+    background-image: url("../img/icon-close.svg");
   }
 }
 
@@ -62,7 +65,10 @@
 
 
   list-style: none;
-  display: none;
+
+  &--close {
+    display: none;
+  }
 
   &--open {
     display: block;
@@ -70,11 +76,13 @@
   }
 }
 
+
 .main-nav__item {
   min-height: 67px;
-  text-align: center;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #eaeaea;
+
+  text-align: center;
 
   &:first-of-type {
     border-top: 1px solid #eaeaea;
@@ -85,17 +93,22 @@
   display: block;
   margin-top: 18px;
 
-  text-transform: uppercase;
   font-size: 20px;
-  color: #111111;
   line-height: 1;
+  color: #111111;
   font-weight: 500;
+  text-transform: uppercase;
 
   &:hover {
     color: rgba(17, 17, 17, 0.6);
   }
 
+
   &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &:focus {
     color: rgba(17, 17, 17, 0.3);
   }
 }
@@ -108,9 +121,9 @@
   .main-nav {
     display: flex;
     justify-content: flex-start;
-    margin-left: 4%;
-    margin-right: 4%;
     align-items: flex-end;
+    margin-right: 4%;
+    margin-left: 4%;
     border: none;
   }
 
@@ -128,9 +141,7 @@
 
   .main-nav__list {
     display: flex;
-
     justify-content: flex-end;
-
     flex-wrap: wrap;
     width: 73%;
 
@@ -150,7 +161,8 @@
   }
 
   .main-nav__link {
-    margin-top: 23px;
+    margin-top: 25px;
+
     font-size: 18px;
     line-height: 1.39;
     color: #222222;
@@ -164,8 +176,9 @@
 
         width: 100%;
         height: 2px;
-        background-color: @leaf;
         margin-top: 6px;
+
+        background-color: @leaf;
       }
     }
   }
@@ -173,16 +186,17 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    justify-content: space-between;
-    margin-left: 7.6%;
-    margin-right: 7.6%;
-    padding-top: 32px;
     z-index: 2;
+
+    justify-content: space-between;
+    margin-right: 7.6%;
+    margin-left: 7.6%;
+    padding-top: 32px;
   }
 
   .main-nav__logo-wrapper {
-    margin: 0;
     width: 202px;
+    margin: 0;
   }
 
   .main-nav__container {
@@ -201,13 +215,14 @@
   }
 
   .main-nav__link {
-    color: #222222;
     font-size: 20px;
     line-height: 1.25;
     font-weight: 400;
+    color: #222222;
 
     &--index {
       color: #ffffff;
+
 
       &:first-of-type::after {
         background-color: #ffffff;
@@ -219,6 +234,11 @@
 
       &:active {
         color: rgba(#ffffff, 30%);
+      }
+
+      &:focus {
+
+        color: rgba(#ffffff, 60%);
       }
     }
   }

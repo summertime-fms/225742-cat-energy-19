@@ -1,26 +1,10 @@
-.showmore {
-  position: relative;
-  flex-direction: column;
-  min-height: 210px;
-  border-bottom: 1px solid #ededed;
 
-
-  &::before {
-    content: "";
-
-    width: 31px;
-    height: 31px;
-    margin: 26px auto;
-    margin-bottom: 19.8px;
-    background-image: url("..//img/icon-plus-mobile.svg");
-    opacity: 0.2;
-  }
-}
 
 .showmore__title {
   width: 73%;
   margin: 0 auto;
 
+  font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
@@ -28,10 +12,11 @@
 }
 
 .showmore__text {
+  margin-top: 6px;
+  margin-bottom: 21px;
+
   font-size: 12px;
   line-height: 16px;
-  margin-top: 6px;
-  margin-bottom: 26px;
   font-family: @content-font;
   text-align: center;
   color: #444444;
@@ -39,7 +24,9 @@
 
 .showmore__button {
   min-height: 30px;
-  padding-bottom: 8px;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+
   font-size: 16px;
   line-height: 20px;
   color: #444444;
@@ -53,30 +40,33 @@
   &:active {
     color: rgba(68, 68, 68, 0.3);
   }
+
+  &:focus {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #f2f2f2;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .showmore {
-    background-color: #ffffff;
     flex-grow: 1;
-    box-shadow: 1px 1px 0 #cdcdcd inset,
-      -1px -1px 0 #cdcdcd inset;
+
+    border: none;
+
+    background-color: #ffffff;
 
     &::before {
-      background-image: url("..//img/icon-plus.svg");
-      margin: 55px auto;
-      margin-bottom: 49px;
-      width: 61px;
-      height: 61px;
+      display: none;
     }
   }
 
   .showmore__title {
-    font-size: 20px;
-    width: 42%;
-    text-transform: uppercase;
+    width: 46%;
     margin-bottom: 25px;
+
+    font-size: 20px;
     line-height: 1;
+    text-transform: uppercase;
   }
 
   .showmore__button {
@@ -84,10 +74,11 @@
   }
 
   .showmore__text {
+    width: 56%;
     margin: 0;
+    margin-bottom: 84px;
+
     font-size: 16px;
-    width: 52%;
-    margin-bottom: 90px;
     line-height: 1.2;
   }
 }
@@ -100,12 +91,12 @@
 
 @media (min-width: @desktop-width) {
   .showmore {
-
-    margin: 0;
-    background-color: #ffffff;
-    border: 1px solid #eaeaea;
     flex-grow: 0;
     width: 245px;
+    margin: 0;
+    border: 1px solid #eaeaea;
+
+    background-color: #ffffff;
     box-shadow: none;
 
     &::before {
@@ -116,18 +107,19 @@
 
   .showmore__title {
     width: 66%;
+
     line-height: 1;
   }
 
   .showmore__text {
-    margin: 0;
     width: 81%;
+    margin: 0;
     margin-bottom: 87px;
   }
 
   .showmore__button {
     margin-bottom: 38px;
-    padding-left: 38px;
     padding-right: 37px;
+    padding-left: 38px;
   }
 }
