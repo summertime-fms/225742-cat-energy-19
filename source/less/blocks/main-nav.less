@@ -60,19 +60,22 @@
 }
 
 .main-nav__list {
-  display: none;
   margin: 0;
   padding: 0;
 
 
   list-style: none;
 
+  &--close {
+    display: none;
+  }
 
   &--open {
     display: block;
     animation: menu__falling 0.6s;
   }
 }
+
 
 .main-nav__item {
   min-height: 67px;

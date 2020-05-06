@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.js" async=""></script>
     <title>HTML Academy. Проект Cat Energy</title>
   </head>
   <body class="page-body">
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
@@ -23,9 +26,9 @@
             </a>
             <button class="main-nav__toggle" type="button" aria-label="Показать/Скрыть меню"></button>
           </div>
-          <ul class="main-nav__list main-nav__list--close">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -85,9 +88,9 @@
         </fieldset>
         <fieldset class="form__fieldset owner-data">
           <legend class="form__legend">
-            <div class="title--green-line">
+            <span class=" title title--green-line">
               Контактные данные<br class="owner-data__title-hide"> (владельца кота)
-            </div>
+            </span>
           </legend>
           <div class="form__fields owner-data__fields">
             <div class="form__item owner-data__item">
@@ -96,7 +99,7 @@
                 <input class="form__input form__input--email owner-data__input" type="email" name="email" id="owner-email" value="" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="kuklachev@gmail.com" required="">
                 <span class="owner-data__icon-wrapper">
                   <svg class="owner-data__icon owner-data__icon--mail" width="17" height="13">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    <use xlink:href="#icon-mail"></use>
                   </svg>
                 </span>
               </div>
@@ -107,7 +110,7 @@
                 <input class="form__input form__input--phone owner-data__input" type="tel" name="tel" id="owner-phone" minlength="17" maxlength="17" value="" pattern="8" placeholder="8 (960) 900-60-90" required="">
                 <span class="owner-data__icon-wrapper">
                   <svg class="owner-data__icon owner-data__icon--phone" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    <use xlink:href="#icon-phone"></use>
                   </svg>
                 </span>
               </div>
@@ -116,9 +119,9 @@
         </fieldset>
         <fieldset class="form__fieldset comment">
           <legend class="form__legend comment__title">
-            <div class="title--green-line">
+            <span class="title title--green-line">
               Комментарий
-            </div>
+            </span>
           </legend>
           <div class="comment__field-wrapper">
             <textarea class="comment__field form__input" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -126,9 +129,9 @@
         </fieldset>
         <fieldset class="form__fieldset form-additional">
           <legend class="form__legend form-additional__title">
-            <div class="title--green-line">
+            <span class="title title--green-line">
               Дополнительно
-            </div>
+            </span>
           </legend>
           <ul class="form-additional__list">
             <li class="form-additional__item">
@@ -173,7 +176,7 @@
     </div>
     <div class="page-footer__wrapper">
       <div class="page-footer__map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.299956600157!2d30.323308149505273!3d59.93878076142525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1587033141664!5m2!1sru!2sru" width="320" height="400" frameborder="0" style="border: 0;" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.299956600157!2d30.323308149505273!3d59.93878076142525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1587033141664!5m2!1sru!2sru" width="320" height="400" style="border: 0;" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <div class="page-footer__info">
         <div class="page-footer__logo-wrapper">
@@ -181,23 +184,23 @@
         </div>
         <ul class="page-footer__socials socials">
           <li class="socials__item">
-            <a class="socials__link socials__link"  href="#" title="Вконтакте" aria-label="Вконтакте">
+            <a class="socials__link"  href="#" title="Вконтакте" aria-label="Вконтакте">
               <svg class="socials__icon socials__icon--vk" width="22" height="12">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link"  href="#" title="Инстаграм" aria-label="Инстаграм">
+            <a class="socials__link"  href="#" title="Инстаграм" aria-label="Инстаграм">
               <svg class="socials__icon socials__icon--insta" width="16.1" height="16">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link" href="#" title="Фейсбук" aria-label="Фейсбук">
+            <a class="socials__link" href="#" title="Фейсбук" aria-label="Фейсбук">
               <svg class="socials__icon socials__icon--fb" width="10" height="19">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -206,7 +209,7 @@
           <span class="copyright__name">HTML Academy</span>
           <a class="copyright__image-wrapper" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
             <svg class="copyright__icon" width="43" height="60">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
