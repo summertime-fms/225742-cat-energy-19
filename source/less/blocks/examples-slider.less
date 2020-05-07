@@ -24,12 +24,17 @@
 }
 
 .examples-slider__controller-title {
+  border: none;
   color: #111111;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  font-family: inherit;
+
+  background: none;
 
   user-select: none;
+  outline: none;
 }
 
 
@@ -52,6 +57,10 @@
   margin-left: 6px;
   border-radius: 3px;
   background-color: @leaf;
+}
+
+.examples-slider__toggler-range-item {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -83,13 +92,15 @@
 
 
   .examples-slider__toggler-range-item {
-    box-sizing: content-box;
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
 
     display: block;
     width: 8px;
     height: 8px;
-    margin-top: calc(50% - 4px);
-    margin-left: calc(50% - 4px);
+    padding: 0;
+    border: none;
 
     border-radius: 50%;
     background-color: @leaf;
@@ -160,20 +171,20 @@
 
 @media (min-width: @desktop-width) {
   .examples-slider {
-    width: 48%;
+    width: 53%;
 
-    margin-top: -8.5%;
-    margin-left: 9%;
+    margin-top: -8.2%;
+    margin-left: 7%;
   }
 
   .examples-slider__slides-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   .examples-slider__controllers {
     margin-top: -361px;
-    padding-right: 67px;
-    padding-left: 54px;
+    padding-right: 34px;
+    padding-left: 73px;
 
     background: none;
   }
@@ -182,8 +193,8 @@
     width: 100%;
 
     &--before {
-      margin-top: -68px;
-      margin-left: -27px;
+      margin-top: -84px;
+      margin-left: -2px;
 
       clip-path: inset(0 46.8% 0 0);
     }
@@ -197,8 +208,8 @@
     .examples-slider__slide {
       &--after {
         display: block;
-        margin-top: -75.5%;
-        margin-left: -26px;
+        margin-top: -75.4%;
+        margin-left: 0;
 
         clip-path: inset(0 0 0 52.9%);
       }
