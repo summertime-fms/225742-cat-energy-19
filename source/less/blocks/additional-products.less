@@ -143,8 +143,8 @@
   .additional-products__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 84.7%;
-    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   .additional-products__details {
@@ -168,7 +168,9 @@
   }
 
   .additional-products__title {
-    margin-bottom: 81px;
+    padding-bottom: 78px;
+    margin: 0;
+    margin-left: -59px;
   }
 
   .additional-products__item {
@@ -178,6 +180,10 @@
 
     border-top: none;
     border-bottom: 1px solid #cdcdcd;
+
+    &:first-of-type {
+      border-top: 1px solid #cdcdcd;
+    }
   }
 
   .additional-products__name {
