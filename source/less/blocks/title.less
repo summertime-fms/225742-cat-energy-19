@@ -48,10 +48,14 @@
 
     &--green-line {
       font-size: 36px;
+      padding-left: calc(50% - 650px);
+      position: relative;
 
       &::before {
-        width: 5%;
-        margin-right: 2.6%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
       }
 
       &::after {

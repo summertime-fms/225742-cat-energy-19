@@ -60,24 +60,27 @@
 
 @media (min-width: @desktop-width) {
   .examples__title {
+    .container;
     margin-top: -13px;
     margin-bottom: 75px;
     padding: 0;
     padding-left: 39px;
   }
 
-  .examples__wrapper {
-    display: flex;
-
+  .examples__inner {
     background-color: #f2f2f2;
-    padding-left: 3%;
-    padding-right: 3%;
+  }
+
+  .examples__wrapper {
+    .container;
+    display: flex;
+    background-color: #f2f2f2;
   }
 
   .examples__content {
     width: 40%;
     margin-top: 64px;
-    padding-right: 0;
+    padding: 0;
   }
 
   .examples__text {
