@@ -24,6 +24,7 @@
 }
 
 .main-nav__toggle {
+  display: none;
   position: absolute;
   top: 24px;
   right: 16px;
@@ -57,6 +58,10 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.main-nav__toggle--open {
+  display: block;
 }
 
 .main-nav__list {
@@ -186,11 +191,10 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    .container;
     z-index: 2;
 
     justify-content: space-between;
-    margin-right: 7.6%;
-    margin-left: 7.6%;
     padding-top: 32px;
   }
 
@@ -233,7 +237,7 @@
       }
 
       &:active {
-        color: rgba(#ffffff, 30%);
+        color: rgba(17, 17, 17, 0.3);
       }
 
       &:focus {

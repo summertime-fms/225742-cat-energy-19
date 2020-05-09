@@ -11,11 +11,7 @@
 }
 
 .form__legend {
-  display: flex;
-  width: 100%;
-  margin: 0;
   margin-bottom: 31px;
-  padding-left: 5.9%;
 
   font-size: 24px;
   line-height: 1;
@@ -264,8 +260,9 @@
   cursor: pointer;
 
   &:focus {
-    outline: none;
-    background-color: #b738a7;
+
+    background-color: @grass;
+    color: rgba(#ffffff, 30%);
   }
 }
 
@@ -355,8 +352,6 @@
 
   .form__legend {
     margin-bottom: 74px;
-    padding: 0;
-
     font-size: 36px;
     line-height: 1;
 
@@ -390,8 +385,12 @@
   .form {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    margin-bottom: 68px;
+    margin-bottom: 63px;
+    padding-top: 64px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 64px;
   }
 
   .form__input {
@@ -400,10 +399,16 @@
     }
   }
 
-  .form__button {
-    width: 39.4%;
-    margin-left: 7.8%;
+  .form__button-wrapper {
+    width: 100%;
+    .container;
   }
+
+  .form__button {
+    width: 47%;
+    margin-left: 0;
+  }
+
 
   .form__required-details {
     padding-top: 0.9%;
