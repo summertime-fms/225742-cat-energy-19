@@ -228,21 +228,22 @@
 
 @media (min-width: @desktop-width) {
   .programs {
-    margin-right: 7.6%;
-    margin-bottom: 72px;
-    margin-left: 7.6%;
-    padding: 0;
+    .container;
+    margin-bottom: 52px;
   }
 
   .programs__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .programs__item {
+    flex-grow: 1;
     width: 46.6%;
     height: auto;
     margin: 0;
+    margin-bottom: 20px;
     padding: 46px 56px 62px 53px;
 
     &:nth-child(2n) {
@@ -250,7 +251,7 @@
     }
 
     &:first-of-type {
-      margin: 0;
+      margin-bottom: 20px;
     }
   }
 
