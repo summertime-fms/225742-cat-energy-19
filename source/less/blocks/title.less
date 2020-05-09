@@ -48,18 +48,22 @@
 
     &--green-line {
       font-size: 36px;
-      padding-left: calc(50% - 650px);
+
+
+      padding-left: 40px;
+      padding-right: 40px;
+      background-color: #ffffff;
       position: relative;
 
       &::before {
         position: absolute;
-        width: 100%;
+        width: 100vw;
         top: 0;
         left: 0;
       }
 
       &::after {
-        margin-left: 3%;
+        display: none;
       }
     }
   }

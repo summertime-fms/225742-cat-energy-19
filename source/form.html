@@ -43,7 +43,7 @@
     <main class="main-page main-page--form">
       <h1 class="title form-title">Подбор программы</h1>
       <p class="form-heading">
-        Заполните анкету и мы подберем программу питания для вашего кота
+        Заполните анкету и мы подберем<br> программу питания для вашего кота
       </p>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__fieldset cat-data">
@@ -120,9 +120,7 @@
         <fieldset class="form__fieldset comment">
           <legend class="form__legend comment__title">
             <span class="title title--green-line">
-              <span class="form__legend-line">
               Комментарий
-              </span>
             </span>
           </legend>
           <div class="comment__field-wrapper">
@@ -162,8 +160,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button form__button" type="submit">Отправить заявку</button>
-        <span class="form__required-details">* — Обязательные поля</span>
+        <div class="form__button-wrapper">
+          <button class="button form__button" type="submit">Отправить заявку</button>
+          <span class="form__required-details">* — Обязательные поля</span>
+          </div>
       </form>
     </main>
     <footer class="page-footer">
