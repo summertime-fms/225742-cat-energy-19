@@ -1,5 +1,5 @@
 .catalog {
-  margin-bottom: 21px;
+  margin-bottom: 28px;
 }
 
 .catalog__title {
@@ -72,7 +72,7 @@
 
 @media (min-width: @tablet-width) {
   .catalog {
-    margin-bottom: 64px;
+    margin-bottom: 67px;
   }
 
   .catalog__item-wrapper {
@@ -116,13 +116,14 @@
 
   .catalog__list {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     min-width: 708px;
   }
 
   .catalog__item {
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
     max-width: 322px;
     padding: 0;
